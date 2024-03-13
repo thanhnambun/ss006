@@ -1,193 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="/folder_style/index.css">
+  <link rel="stylesheet" href="/folder_js/index.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.1/esm/ionicons.min.js"
+      integrity="sha512-WsL2r6j6Im3HvCp3uuExL45LhU4qwsS4HgVHgti+k/9zXNQnLqiunaxwNxDl+NsLHryCUyGPBw2IV7mGe1Z7nQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      nav {
+        position: relative;
+        /* height: 500px; */
+      }
+      nav {
+        margin-top: 20px;
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50px ;
+      }
+  
+      .swiper {
+        width: 100%;
+        height: 500px;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+    </style>
 </head>
 <body>
-         <!-- Header -->
-         <div class="header">
-            <div class="logo">
-                <div>
-                    <img style="display: block" width="100px" src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png"  alt="">
-                </div>
-            </div>
-            <div class="header_product">
-                <div class="index">
-                    <h3><a href="/index.html" style="text-decoration: none ;color: black;">Trang chủ</a></h3>
-                </div>
-                <div class="product"><a href=""></a></div>
-                </div>
-                <div class="product">
-                    <div class="name_product">
-                        <h3><a href="/folder_pages/thoitrang.html" style="text-decoration: none;color: black;">Thời trang</a></h3>
-                        <span class="material-symbols-outlined">
-                            expand_more
-                        </span>
-                    </div>
-                        <div class="productList">
-                        <p class="productList1">Trang phục</p>
-                        <p class="productList1">Túi xách </p>
-                        <p class="productList1">Giày dép</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="content">
-                        <div class="name_product">
-                            <h3><a href="/folder_pages/dientu.html"style="text-decoration: none;color: black;">Điện tử </a></h3>
-                            <span class="material-symbols-outlined">
-                                expand_more
-                            </span>
-                        </div>
-                    </div>
-                    <div class="productList">
-                        <p class="productList1">Điện thoại </p>
-                        <p class="productList1">Laptop</p>
-                        <p class="productList1">Máy tính bàn</p>
-                    </div>
-                </div>
-            </div>
-            <div class="search">
-                <input type="text" id="search" placeholder="nhập tên sản phẩm cần tìm kiếm ">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <a href="giohang.html"> <i class="fa-solid fa-cart-shopping" style="color: black;"></i></a>
-                <a href="/html/dangnhap.html"> <i class="fa-regular fa-user" style="color: black;"></i></a>
-            </div>
-        </div>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="/folder_asset/Screenshot 2024-03-11 111247.png" style="height: auto;" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="/folder_asset/Screenshot 2024-03-11 112724.png" style="height: auto;" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="/folder_asset/Screenshot 2024-03-11 112834.png" style="height: auto;" alt="">                
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-         </div>
-    <!-- Main-->
-       <!-- giày dép -->
-       <img src="./folder_asset/z5225571278241_1e9e0fc21b8fdcb6f8c5a6183130f5d8.jpg" alt="">
-       <img src="./folder_asset/z5225571286463_4feb8c8c0231e949b61e2df1baf18c71.jpg" alt="">
-       <img src="./folder_asset/z5225576114027_8e459fe8e9e82e9a6e0859f6b3062745.jpg" alt="">
-       <img src="./folder_asset/z5225594411993_9fdcda0e89371b4b32e7423fb67ee06b.jpg" alt="">
-       <img src="./folder_asset/z5225594415702_5ddf0846e3f5e1a7743edc01d98b3f56.jpg" alt="">
-       <img src="./folder_asset/z5225594420789_0aa678de48172ca2f932c495d96ff6d6.jpg" alt="">
-       <img src="./folder_asset/z5225594426075_07d43dc9fc388ecb5bbfdf566ef99f50.jpg" alt="">
-       <img src="./folder_asset/z5234782176981_5ed96f43f69d5503591e2447755b2ac7.jpg" alt="">
-       <img src="./folder_asset/z5234782188133_4402cc87beb421ced8d289e153b0d26a.jpg" alt="">
-       <img src="./folder_asset/z5234782202178_32b1a25f62935deec600e3db8e893c4e.jpg" alt="">
-       <img src="./folder_asset/z5234782216607_12087ebaf0d701fc5763165d4937a9bb.jpg" alt="">
-       <img src="/folder_asset/z5234824120907_adff3ce7ab3bba085927d120660b9df8.jpg" alt="">
-       
-    <!-- Footer -->
+  <header>
+    <div class="logo">
+      <div>
+        <img style="display: block" width="100px" src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png"  alt="">
+      </div>
+    </div>
+    <a class="menu" href="/html/index.html" style="text-decoration: none">Trang chủ</a>
+    <div class="menu-trangchu">
+      <a href="/folder_pages/Nike.html" style="text-decoration: none;" class="nameBanner">Nike </a>
+      <a href="/folder_pages/jodan.html" style="text-decoration: none;"class="nameBanner"> Jodan </a>
+      <a href="/folder_pages/hangkhac.html" style="text-decoration: none;"class="nameBanner"> Hãng khác </a>
+    </div>
+    <div class="search">
+      <input type="text" id="search" placeholder="nhập tên sản phẩm cần tìm kiếm ">
+      <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada;"></i>
+      <a href="giohang.html"> <i class="fa-solid fa-cart-shopping" style="color: #eb7ada;"></i></a>
+      <a href="/html/dangnhap.html"> <i class="fa-regular fa-user" style="color: #eb7ada;"></i></a>
+    </div>
+  </header>
+  <br>
+  <hr>
+  <nav>
+    <br>
+    <h3>Top sản phẩm bán chạy</h3><br>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/folder_asset/nike/z5191029375078_df57e3fd3939df2082b2482fd0309621.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/folder_asset/giày tạp nham/z5225571278241_1e9e0fc21b8fdcb6f8c5a6183130f5d8.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/folder_asset/nike/z5210671055605_48bfeefe9337359ebb9a8601f98e9aaa.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="folder_asset/nike/z5242687970934_632c8046fe4122facbbdf314f1b939bd.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="folder_asset/jodan/z5226822941154_421071a668fe3dd767427ae81093f57f.jpg" alt=""></div>
+      </div>
+    <div class="swiper-pagination"></div>
+    </div>
+  </nav>
+
+  <!-- <div class="main">
+    <img src="/folder_asset/giày tạp nham/z5114978496354_2e6aa3e6fc7abecc5c1695e6f6ce650c.jpg" alt="">
+    <img src="/folder_asset/giày tạp nham/z5120905308989_f28ac7d6781fc9aae5e132b1720fbc8d.jpg" alt="">
+    <img src="/folder_asset/giày tạp nham/z5225571278241_1e9e0fc21b8fdcb6f8c5a6183130f5d8.jpg" alt="">
+    <img src="/folder_asset/giày tạp nham/z5225571286463_4feb8c8c0231e949b61e2df1baf18c71.jpg" alt="">
+    <img src="/folder_asset/giày tạp nham/z5225576114027_8e459fe8e9e82e9a6e0859f6b3062745.jpg" alt="">
+    <img src="/folder_asset/giày tạp nham/z5225594411993_9fdcda0e89371b4b32e7423fb67ee06b.jpg" alt="">
+    <img src="/folder_asset/giày tạp nham/z5225594415702_5ddf0846e3f5e1a7743edc01d98b3f56.jpg" alt="">
+  </div> -->
+  <footer>
+    <hr>
     <footer class="footer">
-        <div class="wrapper-footer">
-          <div class="block1">
-            <div class="logo-footer">
-              <img src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png" style="height: 100px;" alt="">
-            </div>
-            <p>
-                Website chuyên cung cấp phẩm giá sỉ lẻ phân khối toàn cuốc ,<br>
-                khách hàng có nhu cầu vui lòng đặt hàng để chúng tôi kiểm kho và báo lại sớm nhất <br>
-                . Ngoài ra chúng tôi còn cung cấp hàng sỉ lẻ khi đặt số lượng lớn  <br>
-            </p>
-            
+      <div class="wrapper-footer">
+        <div class="block1">
+          <div class="logo-footer">
+            <img src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png" style="height: 100px;" alt="">
           </div>
-  
-          <div class="links-container">
-            <h4>YHL store</h4>
-  
+          <p>
+              Website chuyên cung cấp phẩm giá sỉ lẻ phân khối toàn cuốc ,<br>
+              khách hàng có nhu cầu vui lòng đặt hàng để chúng tôi kiểm kho và báo lại sớm nhất <br>
+              . Ngoài ra chúng tôi còn cung cấp hàng sỉ lẻ khi đặt số lượng lớn  <br>
+          </p>
+          
+        </div>
+
+        <div class="links-container">
+          <h4>YHL store</h4>
+
+          <ul>
+            <li>
+              <a href="#">Trang chủ </a>
+            </li>
+            <li>
+              <a href="#">Tạp hóa </a>
+            </li>
+            <li>
+              <a href="#">Thời trang</a>
+            </li>
+            <li>
+              <a href="#">Điện tử </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="chinhsach">
+          <h4>Chính sách</h4>
+
+          <ul>
+            <li>
+              <a href="#">Chính sách bảo mật</a>
+            </li>
+            <li>
+              <a href="#"> Chính sách vận chuyển</a>
+            </li>
+            <li>
+              <a href="#"> Chính sách đổi trả</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lienhe">
+          <h4>Liên hệ với chúng tôi</h4>
+
+          <ul>
+            <li>
+              <p>Tạp hóa YHL Store</p>
+            </li>
+
+            <li>
+              <p>Người đại diện: Nguyễn Thành Nam </p>
+            </li>
+
+            <li>
+              <p>
+                Địa chỉ: Đường Thanh Bình , Mộ Lao , Hà Đông 
+                <br />
+                và Trực Ninh , Nam Định
+              </p>
+            </li>
+
+            <li>
+              <p>Điện thoại: 02839369142</p>
+            </li>
+
+            <li>
+              <p>Email: namnguyen@gmail.com</p>
+            </li>
+
+            <li>
+              <p>MSDN: 0102289856 cấp ngày 23/05/2007 tại Hà Nội</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="follow-container">
+          <div class="follow">
+            <h4>Theo dõi chúng tôi tại:</h4>
+          </div>
+          <div class="icon">
             <ul>
               <li>
-                <a href="#">Trang chủ </a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
               </li>
               <li>
-                <a href="#">Tạp hóa </a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
               </li>
               <li>
-                <a href="#">Thời trang</a>
-              </li>
-              <li>
-                <a href="#">Điện tử </a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
               </li>
             </ul>
-          </div>
-  
-          <div class="chinhsach">
-            <h4>Chính sách</h4>
-  
-            <ul>
-              <li>
-                <a href="#">Chính sách bảo mật</a>
-              </li>
-              <li>
-                <a href="#"> Chính sách vận chuyển</a>
-              </li>
-              <li>
-                <a href="#"> Chính sách đổi trả</a>
-              </li>
-            </ul>
-          </div>
-  
-          <div class="lienhe">
-            <h4>Liên hệ với chúng tôi</h4>
-  
-            <ul>
-              <li>
-                <p>Tạp hóa YHL Store</p>
-              </li>
-  
-              <li>
-                <p>Người đại diện: Nguyễn Thành Nam </p>
-              </li>
-  
-              <li>
-                <p>
-                  Địa chỉ: Đường Thanh Bình , Mộ Lao , Hà Đông 
-                  <br />
-                  và Trực Ninh , Nam Định
-                </p>
-              </li>
-  
-              <li>
-                <p>Điện thoại: 02839369142</p>
-              </li>
-  
-              <li>
-                <p>Email: namnguyen@gmail.com</p>
-              </li>
-  
-              <li>
-                <p>MSDN: 0102289856 cấp ngày 23/05/2007 tại Hà Nội</p>
-              </li>
-            </ul>
-          </div>
-  
-          <div class="follow-container">
-            <div class="follow">
-              <h4>Theo dõi chúng tôi tại:</h4>
-            </div>
-            <div class="icon">
-              <ul>
-                <li>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
-      </footer>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    imgList=[]
+    productList[
+      {
+        id:1,
+        title:1,
+        Img:[""]
+      }
+    ]
+  </script>
 </body>
 </html>
