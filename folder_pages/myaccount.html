@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My account</title>
+    <link rel="stylesheet" href="/folder_style/index.css">
+    <link rel="stylesheet" href="/folder_style/myaccount.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.1/esm/ionicons.min.js"
+      integrity="sha512-WsL2r6j6Im3HvCp3uuExL45LhU4qwsS4HgVHgti+k/9zXNQnLqiunaxwNxDl+NsLHryCUyGPBw2IV7mGe1Z7nQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<body> 
+  <header>
+    <div class="logo">
+      <div>
+        <img
+          style="display: block"
+          width="100px"
+          src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <a class="menu" href="/folder_utils/index.html" style="text-decoration: none"
+      >Trang chủ</a
+    >
+    <div class="menu-trangchu">
+      <a
+        href="/folder_pages/Nike.html"
+        style="text-decoration: none"
+        class="nameBanner"
+        >Nike
+      </a>
+      <a
+        href="/folder_pages/jodan.html"
+        style="text-decoration: none"
+        class="nameBanner"
+      >
+        Jodan
+      </a>
+      <a
+        href="/folder_pages/hangkhac.html"
+        style="text-decoration: none"
+        class="nameBanner"
+      >
+        Hãng khác
+      </a>
+    </div>
+    <div class="search">
+      <input
+        type="text"
+        id="search"
+        placeholder="nhập tên sản phẩm cần tìm kiếm "
+      />
+      <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada"></i>
+      <a href="giohang.html">
+        <i class="fa-solid fa-cart-shopping" style="color: #eb7ada"></i
+      ></a>
+      <span id="icon-login"></span>
+        <i class="fa-regular fa-user" style="color: #eb7ada"></i>
+      </span>
+    </div>
+  </header>
+  <!-- end header -->
+  <body>
+    <div class="single-page">
+      <div class="my-account-or-buy">
+        <div class="myaccount-orbuy-top">
+      
+          <div class="buy-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <a href="/folder_pages/giohang.html"><span style="margin-left: 12px;color: #000000;" >Đơn mua</span></a>
+          </div>
+          <div class="my-account-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+            >
+              <path
+                d="M8.45539 8.24911C11.024 8.24911 13.1063 6.40248 13.1063 4.12455C13.1063 1.84663 11.024 0 8.45539 0C5.88678 0 3.8045 1.84663 3.8045 4.12455C3.8045 6.40248 5.88678 8.24911 8.45539 8.24911Z"
+                fill="#C8E3FF"
+              />
+              <path
+                d="M8.45535 10.3115C3.79512 10.3115 0 13.0832 0 16.4984C0 16.7293 0.204639 16.9108 0.465089 16.9108H16.4456C16.706 16.9108 16.9107 16.7293 16.9107 16.4984C16.9107 13.0832 13.1155 10.3115 8.45535 10.3115Z"
+                fill="#C8E3FF"
+              />
+            </svg>
+            <span style="color: #fe98dc;margin-left: 16px;">My account</span>
+          </div>
+        </div>
+        <div class="help-logout">
+          <div class="help">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+              <path d="M12.0002 2.11816C10.0719 2.11816 8.18682 2.65649 6.58344 3.66506C4.98006 4.67363 3.73038 6.10714 2.99242 7.78433C2.25447 9.46152 2.06139 11.3071 2.43759 13.0876C2.8138 14.868 3.7424 16.5035 5.10596 17.7872C6.46952 19.0709 8.2068 19.9451 10.0981 20.2992C11.9894 20.6534 13.9498 20.4716 15.7314 19.7769C17.513 19.0822 19.0357 17.9057 20.1071 16.3963C21.1784 14.8869 21.7502 13.1123 21.7502 11.2969C21.7473 8.86338 20.7192 6.53033 18.8913 4.80959C17.0635 3.08884 14.5852 2.12092 12.0002 2.11816ZM12.0003 16.9453C11.7778 16.9453 11.5603 16.8832 11.3753 16.7669C11.1903 16.6505 11.0461 16.4851 10.9609 16.2916C10.8758 16.098 10.8535 15.8851 10.8969 15.6796C10.9403 15.4742 11.0475 15.2855 11.2048 15.1374C11.3621 14.9893 11.5626 14.8884 11.7808 14.8475C11.9991 14.8067 12.2253 14.8276 12.4308 14.9078C12.6364 14.988 12.8121 15.1237 12.9357 15.2979C13.0593 15.472 13.1253 15.6768 13.1253 15.8863C13.1253 16.1671 13.0068 16.4365 12.7958 16.6351C12.5848 16.8338 12.2987 16.9453 12.0003 16.9453ZM12.7503 12.6304V12.7094C12.7503 12.8967 12.6712 13.0763 12.5306 13.2087C12.3899 13.3411 12.1992 13.4155 12.0003 13.4155C11.8013 13.4155 11.6106 13.3411 11.4699 13.2087C11.3293 13.0763 11.2503 12.8967 11.2503 12.7094V12.0034C11.2503 11.8161 11.3293 11.6365 11.4699 11.5041C11.6106 11.3717 11.8013 11.2973 12.0003 11.2973C12.3711 11.2973 12.7336 11.1938 13.0419 10.9998C13.3503 10.8059 13.5906 10.5302 13.7325 10.2077C13.8744 9.88512 13.9116 9.53021 13.8392 9.18781C13.7669 8.8454 13.5883 8.53089 13.3261 8.28403C13.0639 8.03717 12.7298 7.86906 12.366 7.80095C12.0023 7.73284 11.6253 7.7678 11.2827 7.90139C10.9401 8.03499 10.6473 8.26124 10.4412 8.55151C10.2352 8.84179 10.1253 9.18306 10.1253 9.53217C10.1253 9.71943 10.0462 9.89901 9.90558 10.0314C9.76493 10.1638 9.57417 10.2382 9.37525 10.2382C9.17634 10.2382 8.98558 10.1638 8.84492 10.0314C8.70427 9.89901 8.62525 9.71943 8.62525 9.53217C8.62534 8.93408 8.80474 8.34815 9.14283 7.84178C9.48092 7.3354 9.96397 6.92915 10.5364 6.66974C11.1089 6.41033 11.7475 6.3083 12.3788 6.37538C13.0101 6.44246 13.6085 6.67593 14.1051 7.04894C14.6017 7.42195 14.9764 7.91934 15.1861 8.48392C15.3958 9.0485 15.432 9.65733 15.2904 10.2404C15.1489 10.8235 14.8354 11.3571 14.3861 11.7799C13.9367 12.2027 13.3697 12.4975 12.7503 12.6304Z" fill="#131313"/>
+            </svg>
+            <span style="margin-left: 10px;"> Help</span>
+          </div>
+          <div class="logout">
+  
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M16.3135 8.30859L20.25 12.0154L16.3135 15.7222" stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.75 12.0156H20.2472" stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.75 19.7822H4.5C4.30109 19.7822 4.11032 19.7078 3.96967 19.5754C3.82902 19.443 3.75 19.2634 3.75 19.0762V4.95508C3.75 4.76782 3.82902 4.58823 3.96967 4.45582C4.11032 4.32341 4.30109 4.24902 4.5 4.24902H9.75" stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span ><a href="./dangki.html" style="margin-left: 10px; color:#000000;">Đăng kí</a></span>
+          </div>
+          <div class="icon-logout">
+
+          </div>
+        </div>
+      </div>
+      <div class="home-my-account">
+        <div class="font-myaccount">My account</div>
+        <div class="logo-myaccount">
+          <div class="logo-myaccount-left">
+            <div class="chuaicon"><i class="fa-regular fa-image"></i></div>
+            <div class="name-vertical">
+              <div class="name-account">Mththu307</div>
+            </div>
+          </div>
+          <div class="button-change-image">Thay đổi ảnh</div>
+        </div>
+        <div class="wrapper container">
+          <div class="form-name-email">
+            <div class="u-name-data">
+              <h5>Tên của bạn:</h5>
+              <div class="input-box">
+                <input type="text" disabled="disabled " value="tên của bạn" />
+                <div class="icon-web">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.7205 8.93563C11.2891 8.93563 13.3714 7.089 13.3714 4.81108C13.3714 2.53315 11.2891 0.686523 8.7205 0.686523C6.15189 0.686523 4.06961 2.53315 4.06961 4.81108C4.06961 7.089 6.15189 8.93563 8.7205 8.93563Z"
+                      fill="#C8E3FF"
+                    />
+                    <path
+                      d="M8.72049 10.998C4.06026 10.998 0.265137 13.7697 0.265137 17.1849C0.265137 17.4159 0.469776 17.5973 0.730225 17.5973H16.7107C16.9712 17.5973 17.1758 17.4159 17.1758 17.1849C17.1758 13.7697 13.3807 10.998 8.72049 10.998Z"
+                      fill="#C8E3FF"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="u-name-data">
+              <h5>Số điện thoại:</h5>
+              <div class="input-box">
+                <input type="text" disabled="disabled " value ="088888888888" />
+                <div class="icon-web">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M20 10.999H22C22 5.869 18.127 2 12.99 2V4C17.052 4 20 6.943 20 10.999Z" fill="#C8E3FF"/>
+                    <path d="M13 8.00024C15.103 8.00024 16 8.89724 16 11.0002H18C18 7.77524 16.225 6.00024 13 6.00024V8.00024ZM16.422 13.4432C16.2299 13.2686 15.9774 13.1754 15.7178 13.1835C15.4583 13.1915 15.212 13.3001 15.031 13.4862L12.638 15.9472C12.062 15.8372 10.904 15.4762 9.71204 14.2872C8.52004 13.0942 8.15904 11.9332 8.05204 11.3612L10.511 8.96724C10.6975 8.78637 10.8062 8.54006 10.8142 8.28045C10.8222 8.02083 10.7289 7.76828 10.554 7.57624L6.85904 3.51324C6.68408 3.3206 6.44092 3.20374 6.18119 3.1875C5.92146 3.17125 5.66564 3.2569 5.46804 3.42624L3.29804 5.28724C3.12515 5.46075 3.02196 5.69169 3.00804 5.93624C2.99304 6.18624 2.70704 12.1082 7.29904 16.7022C11.305 20.7072 16.323 21.0002 17.705 21.0002C17.907 21.0002 18.031 20.9942 18.064 20.9922C18.3086 20.9786 18.5394 20.8749 18.712 20.7012L20.572 18.5302C20.7415 18.3328 20.8273 18.077 20.8113 17.8173C20.7952 17.5576 20.6785 17.3143 20.486 17.1392L16.422 13.4432Z" fill="#C8E3FF"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-name-email">
+            <div class="u-name-data">
+              <h5>Email:</h5>
+              <div class="input-box">
+                <input type="text" disabled="disabled " value = "mththu@gmail.com" />
+                <div class="icon-web">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                    <path d="M24 0H0V18H24V0ZM21.6 4.5L12 10.125L2.4 4.5V2.25L12 7.875L21.6 2.25V4.5Z" fill="#C8E3FF"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="u-name-data">
+              <h5>Địa chỉ:</h5>
+              <div class="input-box">
+                <input type="text" disabled="disabled " value = "Hà Đông, Hà Nội" />
+                <div class="icon-web">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 1.5C9.81276 1.50258 7.71584 2.3726 6.16923 3.91922C4.62261 5.46584 3.75259 7.56276 3.75001 9.75C3.74739 11.5374 4.33124 13.2763 5.41201 14.7C5.41201 14.7 5.63701 14.9963 5.67376 15.039L12 22.5L18.3293 15.0353C18.3623 14.9955 18.588 14.7 18.588 14.7L18.5888 14.6978C19.669 13.2747 20.2526 11.5366 20.25 9.75C20.2474 7.56276 19.3774 5.46584 17.8308 3.91922C16.2842 2.3726 14.1873 1.50258 12 1.5ZM12 12.75C11.4067 12.75 10.8266 12.5741 10.3333 12.2444C9.83995 11.9148 9.45543 11.4462 9.22837 10.8981C9.00131 10.3499 8.9419 9.74667 9.05765 9.16473C9.17341 8.58279 9.45913 8.04824 9.87869 7.62868C10.2982 7.20912 10.8328 6.9234 11.4147 6.80764C11.9967 6.69189 12.5999 6.7513 13.1481 6.97836C13.6962 7.20542 14.1648 7.58994 14.4944 8.08329C14.8241 8.57664 15 9.15666 15 9.75C14.999 10.5453 14.6826 11.3078 14.1202 11.8702C13.5578 12.4326 12.7954 12.749 12 12.75Z" fill="#C8E3FF"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="delete-change-profile">
+          <div class="delete buton-my-account  radius-input">Xóa tài khoản
+          </div>
+          <div class="change-profie buton-my-account  radius-input" id="thaydoiinf">Thay đổi thông tin
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="wrapper-footer">
+        <div class="block1">
+          <div class="logo-footer">
+            <img
+              src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png"
+              style="height: 100px"
+              alt=""
+            />
+          </div>
+          <p>
+            Website chuyên cung cấp phẩm giá sỉ lẻ phân khối toàn cuốc ,<br />
+            khách hàng có nhu cầu vui lòng đặt hàng để chúng tôi kiểm kho và báo
+            lại sớm nhất <br />
+            . Ngoài ra chúng tôi còn cung cấp hàng sỉ lẻ khi đặt số lượng lớn
+            <br />
+          </p>
+        </div>
+
+        <div class="links-container">
+          <h4>YHL store</h4>
+
+          <ul>
+            <li>
+              <a href="/test.html">Trang chủ </a>
+            </li>
+            <li>
+              <a href="/folder_pages/Nike.html">Nike </a>
+            </li>
+            <li>
+              <a href="/folder_pages/jodan.html">Jodan</a>
+            </li>
+            <li>
+              <a href="/folder_pages/hangkhac.html"> Hàng khác </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="chinhsach">
+          <h4>Chính sách</h4>
+
+          <ul>
+            <li>
+              <a href="#">Chính sách bảo mật</a>
+            </li>
+            <li>
+              <a href="#"> Chính sách vận chuyển</a>
+            </li>
+            <li>
+              <a href="#"> Chính sách đổi trả</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lienhe">
+          <h4>Liên hệ với chúng tôi</h4>
+
+          <ul>
+            <li>
+              <p>Tạp hóa YHL Store</p>
+            </li>
+
+            <li>
+              <p>Người đại diện: Nguyễn Thành Nam</p>
+            </li>
+
+            <li>
+              <p>
+                Địa chỉ: Đường Thanh Bình , Mộ Lao , Hà Đông
+                <br />
+                và Trực Ninh , Nam Định
+              </p>
+            </li>
+
+            <li>
+              <p>Điện thoại: 02839369142</p>
+            </li>
+
+            <li>
+              <p>Email: namnguyen@gmail.com</p>
+            </li>
+
+            <li>
+              <p>MSDN: 0102289856 cấp ngày 23/05/2007 tại Hà Nội</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="follow-container">
+          <div class="follow">
+            <h4>Theo dõi chúng tôi tại:</h4>
+          </div>
+          <div class="icon">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/folder_js/index.js"></script>
+  </body>
+</html>

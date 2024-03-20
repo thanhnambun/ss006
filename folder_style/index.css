@@ -8,7 +8,6 @@
 header {
     display: flex;
     height: 100.5px;
-    z-index: 1000;
     background-color: white;
     width: 100%;
     align-items: center;
@@ -37,17 +36,91 @@ header {
     font-family: Inter, Helvetica, sans-serif;
 }
 .search{
+    display: flex;
     margin-left: 100px;
     gap: 50px;
-    display: flex;
 }
 /* kết thúc header */
+/* mở đầu main */
+.tieude2 {
+    color: #f4aef2;
+    padding: 20px 100px;
+    font-size: 30px;
+}
+#nike-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+#jodan-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+#hangkhac-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.product {
+    background-image: linear-gradient(180deg, #fa7979 0%, #f2eef5 100%);
+    width: 380px;
+    border-radius: 20px;
+    padding: 20px 17px;
+}
+.timhieuthem{
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: 2px solid #f48587;
+    color: #f26b6b;
+    margin: 10px;
 
-/* mở dầu  main*/
-/* mở đầu sidebar */
-/* kết thúc sidebar */
-/* mở đầu content */
-/* kết thúc content */
+}
+.tong {
+    display: flex;
+    margin: 20px 30px;
+}
+.timhieuthem:hover{
+    color: rgb(213, 82, 213);
+    background-color: rgb(233, 229, 229);
+}
+.icons{
+    color: #55A8FC;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #55A8FC;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+.icon-heart{
+    margin: 10px 0.1px;
+}
+.icon-cart{
+    margin: 20px 280px 20px;
+}
+.icon-heart :hover{
+    color: rgb(213, 82, 213);
+}
+
+.icon-heart :active {
+    color: yellow;
+}
+/* .photo img{
+    height: 300px;
+    margin: 20px 23px;
+} */
+.photo{
+    transition: all 1s ease;
+}
+.photo:hover{
+    transform: scale(1.2,1.2);
+}
 /* kết thúc main */
 /* bắt đầu foodter */
 .wrapper-footer{
@@ -83,10 +156,10 @@ header {
     padding-bottom: 10px;
 }
 .links-container a:hover{
-    color: #55A8FC;
+    color: #ef7199;
 }
 .chinhsach a:hover{
-    color:#55A8FC;
+    color:#ef7199;
 }
 .chinhsach a{
     color: black;

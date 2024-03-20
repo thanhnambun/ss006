@@ -1,0 +1,261 @@
+.tongthanhtoan{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 30px;
+    height: 250px;
+    font-family: Inter, Helvetica, sans-serif;
+}
+.left{
+    margin-right: 600px;
+}
+.right{
+    margin-right: 20px;
+}
+label{
+    font-size: 20px;
+}
+#magiam{
+    height: 50px;
+    padding-left: 10px;
+}
+#gui{
+    height: 50px;
+    width: 70px;
+    background-color: #f094e2;
+    border: none;
+}
+.righttren {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+h3{
+   margin-top: 20px;
+   font-size: 25px;
+}
+.thanhtoan{
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: #f094e2;
+    border: none;
+}
+.kengang{
+    border-bottom: 4px grey solid;
+    width: 200px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1500px;
+    height: 800px;
+    background-color: rgba(186, 181, 181, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+
+  /* Css mo trang thanh toan */
+
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    height: 20px;
+} 
+h2{
+    color:  #55A8FC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.modal-content{
+    display: flex;
+    height: 700px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: Inter, Helvetica, sans-serif;
+    background-color: white;
+}
+.left-thanhtoan{
+    margin-right: 50px;
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.thanhtoanvaanh{
+    display: flex;
+}
+.anhto{
+    padding-left: 150px;
+}
+#thongtinsanpham11{
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+#giohangcuaban11{
+    border-style: dashed;
+    border-color: rgb(151, 42, 133);
+    width: 650px;
+}
+#khoisanpham11{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#sanpham11{
+    padding-right: 370px;
+    padding-left: 10px;
+}
+#value11{
+    padding-right: 70px
+}
+#tensanpham11{
+    padding-top: 50px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.giasanpham11{
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 15px
+}
+#soluongsanpham11{
+    padding-left: 110px;
+    padding-top: 50px;
+    font-size: 15px;
+}
+#sanpham111{
+    font-size: 15px;
+    padding-left: 30px;
+}
+#value111{
+    font-size: 15px;
+    padding-left: 310px;
+}
+#soluong111{
+    font-size: 15px;
+    padding-left: 100px;
+}
+
+
+.khoisanpham22{
+    display: flex;
+    padding-left: 10px;
+    padding: 10px;
+}
+#tensanpham22{
+    padding-top: 50px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+#giasanpham22{
+    padding-top: 50px;
+    padding-left: 150px;
+    font-size: 15px;
+}
+#soluong22{
+    padding-left: 110px;
+    padding-top: 50px;
+    font-size: 15px;
+}
+.tongphaithanhtoan{
+    margin-left: 400px;
+    margin-top: 10px;
+    font-size: 15px
+}
+.tongphaithanhtoan h3{
+    padding-top: 5px;
+    font-size: 20px
+}
+
+.right-thanhtoan{
+    margin-top: 100px;
+    margin-right: 30px;
+}
+.cungcap{
+    font-size: 17px;
+}
+.cart{
+    display: flex;
+    margin-bottom: 20px;
+}
+.anh1{
+    margin-top: 20px;
+    margin-right: 30px;
+    border-style: solid;
+    border-color: #aaa;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+.anh2{
+    margin-top: 20px;
+    border-style: solid;
+    border-color: #aaa;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.hanthevacode{
+    display: flex;
+}
+.hanthevacode input{
+    width: 210px;
+    height: 30px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border-color: #aaa;
+}
+#tenchuthe{
+    width: 450px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-color: #aaa;
+}
+#sothe{
+    width: 450px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-color: #aaa;
+}
+.cvvcode{
+    margin-left: 30px;
+}
+#thanhtoanthoi{
+    margin-top: 20px;
+    width: 450px;
+    height: 40px;
+    background-color: #55A8FC;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+.khoathongtin{
+    margin-top: 30px;
+    margin-left: 50px;
+    display: flex;
+    color: #7d7d7d;
+}
+.khoathongtin p{
+    font-size: 15px;
+}
+.khoathongtin i{
+    padding-right: 10px;
+}

@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+/* start header */
+header {
+  display: flex;
+  height: 100.5px;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+}
+.logo {
+  padding: 0px 120px;
+  margin-right: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu{
+  color: #eb7ada;
+  padding: 30px;
+  font-size: 20px;
+  font-family: Inter, Helvetica, sans-serif;
+}
+.menu-trangchu {
+  display: flex;
+  gap: 40px;
+}
+.nameBanner{
+  color: #eb7ada;
+  padding: 30px;
+  font-size: 20px;
+  font-family: Inter, Helvetica, sans-serif;
+}
+.search{
+  display: flex;
+  margin-left: 100px;
+  gap: 50px;
+}
+
+/* end header */
+  
+/* start body */
+.tong{
+  margin-left: 70px;
+  margin-top: 120px;
+  margin-right: 100px;
+  font-family: Inter, Helvetica, sans-serif;
+}
+.thongtinsanpham{
+  display: flex;
+  margin-left: 50px;
+}
+.sanpham{
+  padding-right: 570px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+.value{
+  padding-right: 180px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+.giohangcuaban{
+  border-style: dashed;
+  border-radius: 10px;
+  border-color: #91378c;
+  height: 500px;
+}
+.soluong{
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+/* SANPHAM1 */
+#sanpham1{
+  display: flex;
+}
+.khoisanpham{
+  display: flex;
+  padding: 20px;
+}
+.tensanpham{
+  padding-left: 20px;
+  padding-top: 50px;
+  font-size: 24px;
+}
+#giasanpham{
+  padding-top: 80px;
+  padding-left: 130px;
+  font-size: 20px;
+}
+.soluongsanpham{
+  margin-top: 70px;
+  background-color: rgb(246, 244, 244);
+  height: 40px;
+  margin-left: 155px;
+}
+.quantity-input{
+  width: 70px;
+  background-color: rgb(246, 244, 244);
+  border-style: none;
+  text-align: center;
+}
+.quantity-button{
+  background-color: rgb(246, 244, 244);
+  border-style: none;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  color: #55A8FC;
+}
+.delete-div{
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: none;
+  margin-top: 65px;
+  margin-left: 90px;
+}
+/* SANPHAM2 */
+#sanpham2{
+  display: flex;
+}
+.khoisanpham2{
+  display: flex;
+  padding: 20px;
+}
+.tensanpham2{
+  padding-left: 20px;
+  padding-top: 50px;
+  font-size: 24px;
+}
+#giasanpham2{
+  padding-top: 80px;
+  padding-left: 290px;
+  font-size: 20px;
+}
+.soluongsanpham2{
+  margin-top: 70px;
+  background-color: rgb(246, 244, 244);
+  height: 40px;
+  margin-left: 155px;
+}
+.quantity-input2{
+  width: 70px;
+  background-color: rgb(246, 244, 244);
+  border-style: none;
+  text-align: center;
+}
+.quantity-button2{
+  background-color: rgb(246, 244, 244);
+  border-style: none;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  color: #55A8FC;
+}
+.delete-div2{
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: none;
+  margin-top: 65px;
+  margin-left: 90px;
+}
+/* end body */
+
+/* start fooder*/
+
+.wrapper-footer{
+  display: flex;
+  height: 250px;
+}
+.block1{
+  margin: 20px 0 0 120px;
+}
+.block1 p{
+  font-family: Inter, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 5px;
+}
+.block1 .icon-footer{
+  margin: 10px 0 0 0;
+}
+.links-container{
+  margin: 30px;
+  font-size: 13px;
+  font-family: Inter, Helvetica, sans-serif;
+}
+.links-container li{
+  padding-top: 5px;
+}
+.links-container a{
+  color: black;
+}
+.links-container h4{
+  padding-bottom: 10px;
+}
+.links-container a:hover{
+  color: #ef7199;
+}
+.chinhsach a:hover{
+  color:#ef7199;
+}
+.chinhsach a{
+  color: black;
+}
+.chinhsach{
+  margin: 30px;
+  font-size: 13px;
+  font-family: Inter, Helvetica, sans-serif;
+}
+.chinhsach li{
+  padding-top: 5px;
+}
+.chinhsach h4{
+  padding-bottom: 10px;
+}
+.lienhe{
+  margin: 30px;
+  font-size: 13px;
+  font-family: Inter, Helvetica, sans-serif;
+}
+.lienhe li{
+  padding-top: 5px;
+}
+.lienhe h4{
+  padding-bottom: 10px;
+}
+.follow-container{
+  margin: 30px;
+  font-size: 13px;
+  font-family: Inter, Helvetica, sans-serif;
+}
+.follow-container h4{
+  padding-bottom: 10px;
+}
+.follow-container .icon ul{
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.text.links-container{
+  color: black;
+}
+.icon a{
+  font-size: 20px;
+  color: black;
+}
+.icon a:hover{
+  color: red;
+}
+.wrapper-footer p{
+  color: black;
+}
+.wrapper-footer h4{
+  color: black;
+}
+footer ul{
+  list-style: none;
+}
+
+/* End of Css Footer */
+
+

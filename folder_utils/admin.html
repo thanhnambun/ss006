@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+    <!-- <link rel="stylesheet" href="/css/admin.css"> -->
+  </head>
+  <body>
+    <h2>Admin</h2>
+    <div class="input">
+      <input class="display" type="text" placeholder="id" id="id" />
+      <input class="display" type="text" placeholder="category" id="category" />
+      <input class="display" type="text" placeholder="Tên sản phẩm" id="name" />
+      <input class="display" type="text" placeholder="Img url" id="img_url" />
+      <input class="display" type="text" placeholder="price" id="price" />
+      <button
+        style="background-color: rgb(67, 192, 234); width: 100px; height: 50px"
+        class="display"
+        id="newProduct"
+      >
+        + Thêm mới sản phẩm
+      </button>
+    </div>
+    <table border="1" id="projectTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>id</th>
+          <th>category</th>
+          <th>Tên sản phẩm</th>
+          <th>Image URL</th>
+          <th>price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="/folder_js/admin.js"></script>
+  </body>
+</html>

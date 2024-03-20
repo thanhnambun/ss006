@@ -1,0 +1,268 @@
+.form h1 {
+    color: var(--Primary, #fc559d);
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .hello {
+    font-size: 36px;
+    color: #fc559d;
+    font-family: "Inter", sans-serif;
+    width: 50%;
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 120px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  .wrapper {
+    font-family: Inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    border-radius: 23px;
+    background: #FCFCFC;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);    
+    padding: 30px 30px;
+    max-width: 560px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+  }
+  .form .input-box {
+    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #fc559d;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: #fc559d;
+  }
+  
+  
+  .input-box input {
+    width: 70%;
+    outline: none;
+  
+    background-color: #fc559d;
+  }
+  .dangki{
+    color: white;
+  }
+  button.btn {
+    fill: var(--Primary, #fc559d);
+    filter: drop-shadow(0px 4px 4px #fc559d);
+    width: 396px;
+    height: 41px;
+    background-color: #fc559d;
+    border: 1px solid #fc559d;
+    border-radius: 8px;
+    margin-inline: 34px;
+    margin-top: 72px;
+    margin-bottom: 15px;
+    color: #edf8ff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  input[type="text"] {
+    border: none;
+    margin-left: 8px;
+  }
+  input[type="password"] {
+    border: none;
+    margin-left: 8px;
+  }
+  input[type="checkbox"] {
+    margin-top: -10px;
+  }
+
+  
+  .icon-web {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #cff4ff;
+    font-family: "Inter", sans-serif;
+  }
+  .register-link {
+    margin: auto;
+    text-align: center;
+
+  }
+  .register-link p {
+    margin: auto;
+    text-align: center;
+    color: #747474;
+
+  }
+  
+  .register-link a {
+    color: #7bbcfc;
+  }
+  
+  .register-link a:visited {
+    color: #7bbcfc;
+  }
+  .icon-web :active {
+    color: rgb(10, 34, 255);
+  }
+  .form h5 {
+    color: #747474;
+   
+    font-size: 14px;
+   
+    font-weight: 500;
+   
+    margin-top: 24px;
+    margin-bottom: 12px;
+    margin-left: 4px;
+  }
+  .Remember-Forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    color: #7bbcfc;
+  }
+
+  
+  .icon-web {
+    cursor: pointer;
+  }
+  
+  .mui-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .buton-my-account {
+    width: 209px;
+    height: 40px;
+    border: 1px solid #a6e7ff;
+    border-radius: 24px;
+    margin: 12px;
+    display: flex;
+    padding-top: 8px;
+    padding-left: 49px;
+  }
+  .my-acccount-or-buy {
+    width: 167px;
+    margin-left: 36px;
+  }
+  .help-logout {
+    position: fixed;
+    bottom: 45%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .mui-z-index {
+    margin-left: 215px;
+    margin-top: 20px;
+    color: #7BBCFC;
+    background-color: #bed9f4;
+    width: 50px;
+    height: 40px;
+    padding-left: 18px;
+    padding-top: 10px;
+    border-radius: 10px;
+  }
+  .mui-z-index:hover{
+    transform: scale(1.1); 
+    transition: transform 0.1s ease; 
+    cursor: pointer;
+  }
+  .btn:hover {
+    transform: scale(1.025); 
+    transition: transform 0.1s ease; 
+    cursor: pointer;
+  }
+  .btn:active {
+    transform: scale(0.95); 
+    transition: transform 0.1s ease; 
+    cursor: pointer;
+  }
+  .icon-web svg:hover{
+    transform: scale(0.95); 
+    transition: transform 0.1s ease; 
+    cursor: pointer;
+  }
+  
+  .icon-web {
+    cursor: pointer;
+  }
+  
+  .mui-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .buton-my-account {
+    width: 209px;
+    height: 40px;
+    border: 1px solid #a6e7ff;
+    border-radius: 24px;
+    margin: 12px;
+    display: flex;
+    padding-top: 8px;
+    padding-left: 49px;
+  }
+  .my-acccount-or-buy {
+    width: 167px;
+    margin-left: 36px;
+  }
+  .help-logout {
+    position: fixed;
+    bottom: 45%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .mui-z-index:hover{
+    transform: scale(1.1); 
+    transition: transform 0.1s ease; 
+    cursor: pointer;
+  }
+  .mui-z-index:active{
+    transform: scale(0.9); 
+    transition: transform 0.1s ease; 
+    cursor: pointer;
+  }
+  .btn:hover {
+    transform: scale(1.025); 
+    transition: transform 0.1s ease; 
+    cursor: pointer;
+  }
+  .btn:active {
+    transform: scale(0.95); 
+    transition: transform 0.1s ease; 
+    cursor: pointer;
+  }
+  .icon-web svg:hover{
+    transform: scale(1.15); 
+    transition: transform 0.1s ease; 
+    cursor: pointer;
+  }
+  .register-link a:hover{
+    transform: scale(1.15); 
+    transition: transform 0.1s ease; 
+    cursor: pointer;
+  }

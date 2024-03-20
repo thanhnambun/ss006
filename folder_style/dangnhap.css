@@ -1,0 +1,190 @@
+.form h1 {
+    color: var(--Primary, #fa83c4);
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .hello {
+    font-size: 36px;
+    color: #f277bc;
+    font-family: "Inter", sans-serif;
+    width: 50%;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 120px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 100px;
+  }
+  
+  .wrapper {
+    font-family: Inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    border-radius: 23px;
+    background: #FCFCFC;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);    
+    padding: 30px 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+  }
+  .form .input-box {
+    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #f484e7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: #fc559d;
+  }
+  
+  
+  .input-box input {
+    width: 70%;
+    outline: none;
+  
+    background-color: #fc559d;
+  }
+  button.btn {
+    fill: var(--Primary, #55a8fc);
+    filter: drop-shadow(0px 4px 4px #7bbcfc);
+    width: 396px;
+    height: 41px;
+    background-color: #ee9ad9;
+    border: 1px solid #f2aff5;
+    border-radius: 8px;
+    margin-inline: 34px;
+    margin-top: 52px;
+    margin-bottom: 15px;
+    color: #fc559d;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  input[type="text"] {
+    border: none;
+    margin-left: 8px;
+  }
+  input[type="password"] {
+    border: none;
+    margin-left: 8px;
+  }
+  input[type="checkbox"] {
+    margin-top: -10px;
+  }
+  
+  .icon-web {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fc559d;
+    font-family: "Inter", sans-serif;
+  }
+  .icon-mk {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fc559d;
+    font-family: "Inter", sans-serif;
+  }
+  .register-link {
+    margin: auto;
+    text-align: center;
+
+  }
+  .register-link p {
+    margin: auto;
+    text-align: center;
+    color: #747474;
+
+  }
+  
+  .register-link a {
+    color: #fc559d;
+    
+  }
+
+  
+  .register-link a:hover{
+    
+    font-size: 17px;
+    cursor: pointer;
+    color: #fc559d;
+  }
+  .register-link a:active{
+    transform: scale(1.2);
+    font-size: 15px;
+    cursor: pointer;
+    color: #fc559d;
+  }
+
+  .icon-web :active {
+    color: rgb(231, 147, 224);
+  }
+  .form h5 {
+    color: #747474;
+   
+    font-size: 14px;
+   
+    font-weight: 500;
+   
+    margin-top: 24px;
+    margin-bottom: 12px;
+    margin-left: 4px;
+  }
+  .Remember-Forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    color: #fc559d;
+  }
+  .Luumk {
+   
+    position: relative;
+    top: -3px;
+  }
+  
+  .Remember-Forgot span {
+    margin-bottom: 24px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .Remember-Forgot span:hover{
+    font-size: 15px;
+    cursor: pointer;
+    color: #fc559d;
+  }
+  .checkbox-label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .mui-z-index {
+    margin-left: 215px;
+    margin-top: 20px;
+    color: #eebdd2;
+    background-color: #fc559d;
+    width: 50px;
+    height: 40px;
+    padding-left: 18px;
+    padding-top: 10px;
+    border-radius: 10px;
+  }

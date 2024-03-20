@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng kí</title>
+    <link rel="stylesheet" href="/folder_style/index.css" />
+    <link rel="stylesheet" href="/folder_style/dangky.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.1/esm/ionicons.min.js"
+      integrity="sha512-WsL2r6j6Im3HvCp3uuExL45LhU4qwsS4HgVHgti+k/9zXNQnLqiunaxwNxDl+NsLHryCUyGPBw2IV7mGe1Z7nQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div>
+          <img
+            style="display: block"
+            width="100px"
+            src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <a class="menu" href="/folder_utils/index.html" style="text-decoration: none"
+        >Trang chủ</a
+      >
+      <div class="menu-trangchu">
+        <a
+          href="/folder_pages/Nike.html"
+          style="text-decoration: none"
+          class="nameBanner"
+          >Nike
+        </a>
+        <a
+          href="/folder_pages/jodan.html"
+          style="text-decoration: none"
+          class="nameBanner"
+        >
+          Jodan
+        </a>
+        <a
+          href="/folder_pages/hangkhac.html"
+          style="text-decoration: none"
+          class="nameBanner"
+        >
+          Hãng khác
+        </a>
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          id="search"
+          placeholder="nhập tên sản phẩm cần tìm kiếm "
+        />
+        <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada"></i>
+        <a href="/folder_pages/giohang.html">
+          <i class="fa-solid fa-cart-shopping" style="color: #eb7ada"></i
+        ></a>
+     
+        <a href="/folder_pages/dangnhap.html" id="icon-login">
+          <i class="fa-regular fa-user" style="color: #eb7ada"></i
+        ></a>
+      </div>
+    </header>
+    <div class="hello">YHL, xin chào!</div>
+
+    <form class="wrapper" id="formRegister">
+      <div class="form">
+        <h1>Đăng ký</h1>
+        <h5>Tên đăng nhập:</h5>
+        <div class="input-box">
+          <input type="text" placeholder="Tên đăng nhập " required id="name" />
+          <div class="icon-web">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                d="M8.7205 8.93563C11.2891 8.93563 13.3714 7.089 13.3714 4.81108C13.3714 2.53315 11.2891 0.686523 8.7205 0.686523C6.15189 0.686523 4.06961 2.53315 4.06961 4.81108C4.06961 7.089 6.15189 8.93563 8.7205 8.93563Z"
+                fill="#C8E3FF"
+              />
+              <path
+                d="M8.72049 10.998C4.06026 10.998 0.265137 13.7697 0.265137 17.1849C0.265137 17.4159 0.469776 17.5973 0.730225 17.5973H16.7107C16.9712 17.5973 17.1758 17.4159 17.1758 17.1849C17.1758 13.7697 13.3807 10.998 8.72049 10.998Z"
+                fill="#C8E3FF"
+              />
+            </svg>
+          </div>
+        </div>
+        <h5>Email:</h5>
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Enter your Your email "
+            required
+            id="email"
+          />
+          <div class="icon-web">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.75368 5.67067C2.875 6.54935 2.875 7.96357 2.875 10.792V12.2087C2.875 15.0371 2.875 16.4513 3.75368 17.33C4.63236 18.2087 6.04657 18.2087 8.875 18.2087H14.125C16.9534 18.2087 18.3676 18.2087 19.2463 17.33C20.125 16.4513 20.125 15.0371 20.125 12.2087V10.792C20.125 7.96356 20.125 6.54935 19.2463 5.67067C18.3676 4.79199 16.9534 4.79199 14.125 4.79199H8.875C6.04657 4.79199 4.63236 4.79199 3.75368 5.67067ZM6.3047 7.79328C5.84517 7.48692 5.2243 7.6111 4.91795 8.07063C4.6116 8.53015 4.73577 9.15102 5.1953 9.45738L10.3906 12.9209C11.0624 13.3688 11.9376 13.3688 12.6094 12.9209L17.8047 9.45738C18.2642 9.15102 18.3884 8.53015 18.0821 8.07063C17.7757 7.6111 17.1548 7.48692 16.6953 7.79328L11.5 11.2568L6.3047 7.79328Z"
+                fill="#C8E3FF"
+              />
+            </svg>
+          </div>
+        </div>
+        <h5>Mật khẩu:</h5>
+        <div class="input-box">
+          <input
+            type="password"
+            id="matkhau"
+            placeholder="****************"
+            required
+          />
+          <div id="hide-password" class="icon-web">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.237 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.7679 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57694 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.237 15.1157ZM9.39306 10.5144C9.14293 10.9524 9 11.4595 9 12C9 13.6569 10.3431 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36426 18 5.23205 14.7899 3.81196 13.0657C3.4238 12.5944 3.22972 12.3588 3.22972 12C3.22972 11.6412 3.4238 11.4056 3.81196 10.9343C4.48539 10.1167 5.54383 8.96489 6.85841 7.97974L9.39306 10.5144Z"
+                fill="#C8E3FF"
+              />
+              <path d="M5 2L21 18" stroke="#C8E3FF" stroke-width="2" />
+            </svg>
+          </div>
+        </div>
+        <div class="or">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="228"
+            height="3"
+            viewBox="0 0 228 3"
+            fill="none"
+          >
+            <path
+              d="M1 1.27344H226.476"
+              stroke="#C8E3FF"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+          <span style="color: #7bbbfc51; font-size: 10px">or</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="228"
+            height="3"
+            viewBox="0 0 228 3"
+            fill="none"
+          >
+            <path
+              d="M1 1.27344H226.476"
+              stroke="#C8E3FF"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </div>
+        <div class="mui-z-index">
+          <i class="fa-solid fa-g"></i>
+        </div>
+        <button type="submit" class="btn">
+          đăng kí
+          <!-- <a class="dangki" href="/html/dangnhap.html">Đăng ký</a> -->
+        </button>
+      </div>
+    </form>
+    <footer class="footer">
+      <div class="wrapper-footer">
+        <div class="block1">
+          <div class="logo-footer">
+            <img
+              src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png"
+              style="height: 100px"
+              alt=""
+            />
+          </div>
+          <p>
+            Website chuyên cung cấp phẩm giá sỉ lẻ phân khối toàn cuốc ,<br />
+            khách hàng có nhu cầu vui lòng đặt hàng để chúng tôi kiểm kho và báo
+            lại sớm nhất <br />
+            . Ngoài ra chúng tôi còn cung cấp hàng sỉ lẻ khi đặt số lượng lớn
+            <br />
+          </p>
+        </div>
+
+        <div class="links-container">
+          <h4>YHL store</h4>
+
+          <ul>
+            <li>
+              <a href="#">Trang chủ </a>
+            </li>
+            <li>
+              <a href="#">Tạp hóa </a>
+            </li>
+            <li>
+              <a href="#">Thời trang</a>
+            </li>
+            <li>
+              <a href="#">Điện tử </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="chinhsach">
+          <h4>Chính sách</h4>
+
+          <ul>
+            <li>
+              <a href="#">Chính sách bảo mật</a>
+            </li>
+            <li>
+              <a href="#"> Chính sách vận chuyển</a>
+            </li>
+            <li>
+              <a href="#"> Chính sách đổi trả</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lienhe">
+          <h4>Liên hệ với chúng tôi</h4>
+
+          <ul>
+            <li>
+              <p>Tạp hóa YHL Store</p>
+            </li>
+
+            <li>
+              <p>Người đại diện: Nguyễn Thành Nam</p>
+            </li>
+
+            <li>
+              <p>
+                Địa chỉ: Đường Thanh Bình , Mộ Lao , Hà Đông
+                <br />
+                và Trực Ninh , Nam Định
+              </p>
+            </li>
+
+            <li>
+              <p>Điện thoại: 02839369142</p>
+            </li>
+
+            <li>
+              <p>Email: namnguyen@gmail.com</p>
+            </li>
+
+            <li>
+              <p>MSDN: 0102289856 cấp ngày 23/05/2007 tại Hà Nội</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="follow-container">
+          <div class="follow">
+            <h4>Theo dõi chúng tôi tại:</h4>
+          </div>
+          <div class="icon">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/folder_js/dangki.js"></script>
+  </body>
+</html>
