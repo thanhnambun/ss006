@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="/folder_style/index.css" />
+    <link rel="stylesheet" href="/folder_js/index.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.1/esm/ionicons.min.js"
+      integrity="sha512-WsL2r6j6Im3HvCp3uuExL45LhU4qwsS4HgVHgti+k/9zXNQnLqiunaxwNxDl+NsLHryCUyGPBw2IV7mGe1Z7nQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      nav {
+        margin-top: 20px;
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50px;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 500px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+      #tieude111 {
+        margin-left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div>
+          <img
+            style="display: block"
+            width="100px"
+            src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <a
+        class="menu"
+        href="/folder_utils/index.html"
+        style="text-decoration: none"
+        >Trang chủ</a
+      >
+      <div class="menu-trangchu">
+        <a
+          href="/folder_pages/Nike.html"
+          style="text-decoration: none"
+          class="nameBanner"
+          >Nike AF1
+        </a>
+        <a
+          href="/folder_pages/jodan.html"
+          style="text-decoration: none"
+          class="nameBanner"
+        >
+          Jodan
+        </a>
+        <a
+          href="/folder_pages/hangkhac.html"
+          style="text-decoration: none"
+          class="nameBanner"
+        >
+          Nike Max
+        </a>
+      </div>
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada"></i>
+        <a href="/folder_pages/giohang.html">
+          <i class="fa-solid fa-cart-shopping" style="color: #eb7ada"></i
+        ></a>
+        <span id="icon-login">
+          <i class="fa-regular fa-user" style="color: #eb7ada"></i>
+        </span>
+      </div>
+    </header>
+    <br />
+    <hr />
+    <nav>
+      <br />
+      <h2 id="tieude111">TOP SẢN PHẨM BÁN CHẠY</h2>
+      <br />
+      <div iv class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="/folder_asset/air max/air-max-1-shoes-KcSx0w.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/folder_asset/air max/air-max-90-lv8-shoes-5KhTdP.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/folder_asset/jodan/air-jordan-1-elevate-low1.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="/folder_asset/af1/air-force-1-071-lv8.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/folder_asset/af1/air-force-1-074.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </nav>
+    <!-- hết phần nav -->
+
+    <div class="main">
+      <section class="nike_category">
+        <div class="tieude2" id="nike_category_title">
+          <h3>Nike</h3>
+        </div>
+        <div id="nike-section"></div>
+        <button class="chuyensangtrang">
+          <a href="/folder_pages/Nike.html" style="text-decoration: none"
+            >Tìm hiểu thêm</a
+          >
+        </button>
+      </section>
+      <!-- hết giày nike -->
+
+      <section class="jodan_category">
+        <div class="tieude2" id="jodan_category_title">
+          <h3>Jodan</h3>
+        </div>
+        <div id="jodan-section"></div>
+        <button class="chuyensangtrang">
+          <a href="/folder_pages/jodan.html" style="text-decoration: none"
+            >Tìm hiểu thêm</a
+          >
+        </button>
+      </section>
+
+      <!-- hết giày jd -->
+      <section class="hangkhac_category">
+        <div class="tieude2" id="hangkhac_category_title">
+          <h3>Nike Max</h3>
+        </div>
+        <div id="hangkhac-section"></div>
+        <button class="chuyensangtrang">
+          <a href="/folder_pages/hangkhac.html" style="text-decoration: none"
+            >Tìm hiểu thêm</a
+          >
+        </button>
+      </section>
+      <!-- hết hãng khác -->
+    </div>
+    <br />
+    <hr />
+    <footer class="footer">
+      <div class="wrapper-footer">
+        <div class="block1">
+          <div class="logo-footer">
+            <img
+              src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png"
+              style="height: 100px"
+              alt=""
+            />
+          </div>
+          <p>
+            Website chuyên cung cấp phẩm giá sỉ lẻ phân khối<br />
+            toàn quốc, khách hàng có nhu cầu vui lòng đặt <br />
+            hàng để chúng tôi kiểm kho và báo lại sớm nhất. <br />
+            Ngoài ra chúng tôi còn cung cấp hàng sỉ lẻ khi <br />
+            đặt số lượng lớn.<br />
+          </p>
+        </div>
+
+        <div class="links-container">
+          <h4>YHL store</h4>
+
+          <ul>
+            <li>
+              <a href="/folder_utils/index.html" style="text-decoration: none"
+                >Trang chủ
+              </a>
+            </li>
+            <li>
+              <a href="/folder_pages/Nike.html" style="text-decoration: none"
+                >Nike
+              </a>
+            </li>
+            <li>
+              <a href="/folder_pages/jodan.html" style="text-decoration: none"
+                >Jodan</a
+              >
+            </li>
+            <li>
+              <a
+                href="/folder_pages/hangkhac.html"
+                style="text-decoration: none"
+              >
+                Hàng khác
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="chinhsach">
+          <h4>Chính sách</h4>
+
+          <ul>
+            <li>
+              <a href="#" style="text-decoration: none">Chính sách bảo mật</a>
+            </li>
+            <li>
+              <a href="#" style="text-decoration: none">
+                Chính sách vận chuyển</a
+              >
+            </li>
+            <li>
+              <a href="#" style="text-decoration: none"> Chính sách đổi trả</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lienhe">
+          <h4>Liên hệ với chúng tôi</h4>
+
+          <ul>
+            <li>
+              <p>Tạp hóa YHL Store</p>
+            </li>
+
+            <li>
+              <p>Người đại diện: Nguyễn Thành Nam</p>
+            </li>
+
+            <li>
+              <p>
+                Địa chỉ: Đường Thanh Bình , Mộ Lao , Hà Đông
+                <br />
+                và Trực Ninh , Nam Định
+              </p>
+            </li>
+
+            <li>
+              <p>Điện thoại: 02839369142</p>
+            </li>
+
+            <li>
+              <p>Email: namnguyen@gmail.com</p>
+            </li>
+
+            <li>
+              <p>MSDN: 0102289856 cấp ngày 23/05/2007 tại Hà Nội</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="follow-container">
+          <div class="follow">
+            <h4>Theo dõi chúng tôi tại:</h4>
+          </div>
+          <div class="icon">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/folder_js/index.js"></script>
+  </body>
+</html>

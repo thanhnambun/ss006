@@ -33,7 +33,6 @@ formlogin.addEventListener("submit" , function (e) {
         }
         if (check) {
             if (inpPassword == account.matkhau) {
-                localStorage.setItem("userLogin",JSON.stringify(account));
                 localStorage.setItem("checkLogin",account.id);
                 window.location.href = "/folder_utils/index.html"
             } else {

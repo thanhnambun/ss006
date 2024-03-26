@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My account</title>
-    <link rel="stylesheet" href="/folder_style/index.css" />
-    <link rel="stylesheet" href="/folder_style/myaccount.css" />
+    <title>Jodan</title>
+    <link rel="stylesheet" href="/folder_style/jodan.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -36,7 +35,10 @@
           />
         </div>
       </div>
-      <a class="menu" href="/index.html" style="text-decoration: none"
+      <a
+        class="menu"
+        href="/folder_utils/index.html"
+        style="text-decoration: none"
         >Trang chủ</a
       >
       <div class="menu-trangchu">
@@ -44,7 +46,7 @@
           href="/folder_pages/Nike.html"
           style="text-decoration: none"
           class="nameBanner"
-          >Nike
+          >Nike AF1
         </a>
         <a
           href="/folder_pages/jodan.html"
@@ -58,26 +60,29 @@
           style="text-decoration: none"
           class="nameBanner"
         >
-          Hãng khác
+          Nike Max
         </a>
       </div>
       <div class="search">
-        <input
-          type="text"
-          id="search"
-          placeholder="nhập tên sản phẩm cần tìm kiếm "
-        />
         <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada"></i>
         <a href="/folder_pages/giohang.html">
           <i class="fa-solid fa-cart-shopping" style="color: #eb7ada"></i
         ></a>
-        <a href="/folder_pages/dangnhap.html" id="icon-login">
-          <i class="fa-regular fa-user" style="color: #eb7ada"></i
-        ></a>
+        <span id="icon-login">
+          <i class="fa-regular fa-user" style="color: #eb7ada"></i>
+        </span>
       </div>
     </header>
     <!-- end header -->
-
+    <section class="jodan_category">
+      <div class="tieude2" id="jodan_category_title">
+        <h3>Jodan</h3>
+      </div>
+      <div id="jodan-section"></div>
+    </section>
+    <div class="pagination"></div>
+    <br />
+    <!-- chuyen trang -->
     <!-- Footer -->
     <footer class="footer">
       <div class="wrapper-footer">
@@ -90,11 +95,11 @@
             />
           </div>
           <p>
-            Website chuyên cung cấp phẩm giá sỉ lẻ phân khối toàn cuốc ,<br />
-            khách hàng có nhu cầu vui lòng đặt hàng để chúng tôi kiểm kho và báo
-            lại sớm nhất <br />
-            . Ngoài ra chúng tôi còn cung cấp hàng sỉ lẻ khi đặt số lượng lớn
-            <br />
+            Website chuyên cung cấp phẩm giá sỉ lẻ phân khối<br />
+            toàn quốc, khách hàng có nhu cầu vui lòng đặt <br />
+            hàng để chúng tôi kiểm kho và báo lại sớm nhất. <br />
+            Ngoài ra chúng tôi còn cung cấp hàng sỉ lẻ khi <br />
+            đặt số lượng lớn.<br />
           </p>
         </div>
 
@@ -103,16 +108,27 @@
 
           <ul>
             <li>
-              <a href="/test.html">Trang chủ </a>
+              <a href="/folder_utils/index.html" style="text-decoration: none"
+                >Trang chủ
+              </a>
             </li>
             <li>
-              <a href="/folder_pages/Nike.html">Nike </a>
+              <a href="/folder_pages/Nike.html" style="text-decoration: none"
+                >Nike
+              </a>
             </li>
             <li>
-              <a href="/folder_pages/jodan.html">Jodan</a>
+              <a href="/folder_pages/jodan.html" style="text-decoration: none"
+                >Jodan</a
+              >
             </li>
             <li>
-              <a href="/folder_pages/hangkhac.html"> Hàng khác </a>
+              <a
+                href="/folder_pages/hangkhac.html"
+                style="text-decoration: none"
+              >
+                AIR Max
+              </a>
             </li>
           </ul>
         </div>
@@ -122,13 +138,15 @@
 
           <ul>
             <li>
-              <a href="#">Chính sách bảo mật</a>
+              <a href="#" style="text-decoration: none">Chính sách bảo mật</a>
             </li>
             <li>
-              <a href="#"> Chính sách vận chuyển</a>
+              <a href="#" style="text-decoration: none">
+                Chính sách vận chuyển</a
+              >
             </li>
             <li>
-              <a href="#"> Chính sách đổi trả</a>
+              <a href="#" style="text-decoration: none"> Chính sách đổi trả</a>
             </li>
           </ul>
         </div>
@@ -206,6 +224,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="/folder_js/index.js"></script>
+    <script src="/folder_js/jodan.js"></script>
   </body>
 </html>

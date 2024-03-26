@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My account</title>
-    <link rel="stylesheet" href="/folder_style/myaccount.css">
-    <link rel="stylesheet" href="/folder_style/giohang.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="/folder_style/myaccount.css" />
+    <link rel="stylesheet" href="/folder_style/giohang.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -13,66 +13,74 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <script
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.1/esm/ionicons.min.js"
       integrity="sha512-WsL2r6j6Im3HvCp3uuExL45LhU4qwsS4HgVHgti+k/9zXNQnLqiunaxwNxDl+NsLHryCUyGPBw2IV7mGe1Z7nQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-</head>
-<body> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-          <div>
-            <img
-              style="display: block"
-              width="100px"
-              src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <a class="menu" href="/folder_utils/index.html" style="text-decoration: none"
-          >Trang chủ</a
-        >
-        <div class="menu-trangchu">
-          <a
-            href="/folder_pages/Nike.html"
-            style="text-decoration: none"
-            class="nameBanner"
-            >Nike
-          </a>
-          <a
-            href="/folder_pages/jodan.html"
-            style="text-decoration: none"
-            class="nameBanner"
-          >
-            Jodan
-          </a>
-          <a
-            href="/folder_pages/hangkhac.html"
-            style="text-decoration: none"
-            class="nameBanner"
-          >
-            Hãng khác
-          </a>
-        </div>
-        <div class="search">
-          <input
-            type="text"
-            id="search"
-            placeholder="nhập tên sản phẩm cần tìm kiếm "
+      <div class="logo">
+        <div>
+          <img
+            style="display: block"
+            width="100px"
+            src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png"
+            alt=""
           />
-          <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada"></i>
-          <a href="/folder_pages/giohang.html">
-            <i class="fa-solid fa-cart-shopping" style="color: #eb7ada"></i
-          ></a>
-          <a href="/folder_pages/dangnhap.html" id="icon-login">
-            <i class="fa-regular fa-user" style="color: #eb7ada"></i
-          ></a>
         </div>
-      </header>
+      </div>
+      <a
+        class="menu"
+        href="/folder_utils/index.html"
+        style="text-decoration: none"
+        >Trang chủ</a
+      >
+      <div class="menu-trangchu">
+        <a
+          href="/folder_pages/Nike.html"
+          style="text-decoration: none"
+          class="nameBanner"
+          >Nike AF1
+        </a>
+        <a
+          href="/folder_pages/jodan.html"
+          style="text-decoration: none"
+          class="nameBanner"
+        >
+          Jodan
+        </a>
+        <a
+          href="/folder_pages/hangkhac.html"
+          style="text-decoration: none"
+          class="nameBanner"
+        >
+          Nike Max
+        </a>
+      </div>
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada"></i>
+        <a href="/folder_pages/giohang.html" id="iconGioHang">
+          <i class="fa-solid fa-cart-shopping" style="color: #eb7ada"></i
+        ></a>
+        <a href="/folder_pages/myaccount.html">
+          <i class="fa-regular fa-user" style="color: #eb7ada"></i>
+        </a>
+      </div>
+    </header>
     <!-- end header -->
     <!--start body  -->
     <section class="giohang">
@@ -81,13 +89,9 @@
           <p class="sanpham">SẢN PHẨM</p>
           <p class="value">GIÁ</p>
           <p class="soluong">SỐ LƯỢNG</p>
+          <p class="tongtien">Tổng tiền</p>
         </div>
-        <div class="giohangcuaban">
-          <div id="sanpham1">
-          </div>
-          <div id="sanpham2">
-          </div>
-        </div>
+        <div class="giohangcuaban"></div>
       </div>
     </section>
 
@@ -105,18 +109,93 @@
         <button id="gui">Nhập</button>
       </div>
       <div class="righttren">
-        
-
         <!-- Nút mở trang thanh toán -->
         <button class="thanhtoan" onclick="motrangthanhtoan()">
           Thanh toán
         </button>
-              <div class="khoathongtin">x`
+
+        <!-- Modal -->
+
+        <div class="modal" id="motrang">
+          <span class="close-button" onclick="dongtrangthanhtoan()"
+            >&times;</span
+          >
+          <div class="modal-content">
+            <!-- Nội dung của trang thanh toan -->
+            <div class="left-thanhtoan">
+              <div class="thanhtoanvaanh">
+                <h2>Thanh toán</h2>
+                <img
+                  class="anhto"
+                  src="/folder_asset/Paper money or dollar bills and blue credit card 3D illustration 1.png"
+                  style="height: 200px"
+                  alt="cart"
+                />
+              </div>
+              <div id="thongtinsanpham11">
+                <p id="sanpham111">SẢN PHẨM</p>
+                <p id="value111">GIÁ</p>
+                <p id="soluong111">SỐ LƯỢNG</p>
+              </div>
+              <div class="giohangthanhtoan"></div>
+              <div class="tongphaithanhtoan"></div>
+            </div>
+
+            <div class="right-thanhtoan">
+              <b>Kiểm tra</b>
+              <p class="cungcap">
+                Cung cấp cho tôi thông tin tài khoản của bạn. Chúng tôi cam
+                kết<br />
+                bảo mật mọi thông tin bạn cung cấp.
+              </p>
+              <b>Card Type</b>
+              <div class="cart">
+                <div class="anh1">
+                  <img src="/folder_asset/Visa_Inc._logo 1.png" alt="visa" />
+                </div>
+                <div class="anh2">
+                  card
+                  <!-- <img
+                    src="/folder_asset/Paper money or dollar bills and blue credit card 3D illustration 1.png"
+                    alt="master"
+                  /> -->
+                </div>
+              </div>
+              <label for="tenchuthe"><b>Tên chủ thẻ:</b></label
+              ><br />
+              <input type="text" name="tenchuthe" id="tenchuthe" /><br />
+              <label for="sothe"><b>Số thẻ:</b></label
+              ><br />
+              <input type="tel" for="sothe" id="sothe" /><br />
+              <div class="hanthevacode">
+                <div class="hanthe">
+                  <label for="hancuathe"><b>Hạn của thẻ:</b></label
+                  ><br />
+                  <input
+                    type="datetime-local"
+                    name="hancuathe"
+                    id="hancuathe"
+                  />
+                </div>
+                <div class="cvvcode">
+                  <label for="cvv"><b>CVV Code</b></label
+                  ><br />
+                  <input type="text" for="cvv" id="cvv" />
+                </div>
+              </div>
+              <button id="thanhtoanthoi">
+                <b>Thanh toán: ₫ 1,318,000</b>
+              </button>
+              <div class="khoathongtin">
                 <i class="fa-solid fa-lock"></i>
                 <p>Chúng tôi cam kết bảo mật thông tin tài khoản của bạn.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-     <!-- end body  -->
+    <!-- end body  -->
     <!-- Footer -->
     <footer class="footer">
       <div class="wrapper-footer">
@@ -129,11 +208,11 @@
             />
           </div>
           <p>
-            Website chuyên cung cấp phẩm giá sỉ lẻ phân khối toàn cuốc ,<br />
-            khách hàng có nhu cầu vui lòng đặt hàng để chúng tôi kiểm kho và báo
-            lại sớm nhất <br />
-            . Ngoài ra chúng tôi còn cung cấp hàng sỉ lẻ khi đặt số lượng lớn
-            <br />
+            Website chuyên cung cấp phẩm giá sỉ lẻ phân khối<br />
+            toàn quốc, khách hàng có nhu cầu vui lòng đặt <br />
+            hàng để chúng tôi kiểm kho và báo lại sớm nhất. <br />
+            Ngoài ra chúng tôi còn cung cấp hàng sỉ lẻ khi <br />
+            đặt số lượng lớn.<br />
           </p>
         </div>
 
@@ -245,5 +324,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="../folder_js/giohang.js"></script>
   </body>
 </html>

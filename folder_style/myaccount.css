@@ -46,129 +46,265 @@ header {
 /* end header */
   
 /* start body */
-.tong{
-  margin-left: 70px;
-  margin-top: 120px;
-  margin-right: 100px;
+.single-page {
+  width: 100%;
+  display: flex;
+  height: 550px;
+  margin-top: 100px;
   font-family: Inter, Helvetica, sans-serif;
 }
-.thongtinsanpham{
+
+.single-page .my-account-or-buy {
+  background-color: #fdfdfd;
+  padding-left: 40px;
+  padding-right: 64px;
+}
+
+.my-account-or-buy .help-logout {
+  margin-top: 400px;
+}
+
+.home-my-account {
+  padding-left: 24px;
+  width: 70%;
+}
+
+.home-my-account .font-myaccount {
+  color: #55a8fc;
+}
+
+.home-my-account .logo-myaccount {
   display: flex;
-  margin-left: 50px;
+  justify-content: space-between;
 }
-.sanpham{
-  padding-right: 570px;
-  padding-bottom: 5px;
-  font-size: 20px;
-}
-.value{
-  padding-right: 180px;
-  padding-bottom: 5px;
-  font-size: 20px;
-}
-.giohangcuaban{
-  border-style: dashed;
-  border-radius: 10px;
-  border-color: #91378c;
-  height: 500px;
-}
-.soluong{
-  padding-bottom: 5px;
-  font-size: 20px;
-}
-/* SANPHAM1 */
-#sanpham1{
+
+.logo-myaccount .logo-myaccount-left {
   display: flex;
+  /* can giua theo chieu doc */
+  align-items: center;
+  gap: 32px;
 }
-.khoisanpham{
-  display: flex;
-  padding: 20px;
-}
-.tensanpham{
-  padding-left: 20px;
-  padding-top: 50px;
-  font-size: 24px;
-}
-#giasanpham{
-  padding-top: 80px;
-  padding-left: 130px;
-  font-size: 20px;
-}
-.soluongsanpham{
-  margin-top: 70px;
-  background-color: rgb(246, 244, 244);
-  height: 40px;
-  margin-left: 155px;
-}
-.quantity-input{
-  width: 70px;
-  background-color: rgb(246, 244, 244);
-  border-style: none;
-  text-align: center;
-}
-.quantity-button{
-  background-color: rgb(246, 244, 244);
-  border-style: none;
-  font-size: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
-  color: #55A8FC;
-}
-.delete-div{
-  height: 40px;
-  width: 40px;
+.chuaicon{
+  background-color: #c6bebe;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
-  border: none;
-  margin-top: 65px;
-  margin-left: 90px;
 }
-/* SANPHAM2 */
-#sanpham2{
+.chuaicon i{
+  padding-top: 43px;
+  padding-left: 43px;
+}
+.logo-myaccount .button-change-image {
+  /* can giua theo chieu doc */
+  margin: auto 0;
+  padding: 12px 38px;
+  border: 2px solid #6E95B8;
+  color: #6E95B8;
+  border-radius: 50px;
+}
+
+.wrapper {
   display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  gap: 90px;
 }
-.khoisanpham2{
+.font-myaccount{
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 56px;
+}
+
+.form-name-email{
+  width: 50%;
+}
+.input-box {
   display: flex;
-  padding: 20px;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 9px;
+  border: 2px solid #ffc8fb;
+  background-color: #ffc8fb;
 }
-.tensanpham2{
-  padding-left: 20px;
-  padding-top: 50px;
-  font-size: 24px;
+.input-box input[type="text"] {
+  font-size: 16px; 
+  
 }
-#giasanpham2{
-  padding-top: 80px;
-  padding-left: 290px;
-  font-size: 20px;
-}
-.soluongsanpham2{
-  margin-top: 70px;
-  background-color: rgb(246, 244, 244);
-  height: 40px;
-  margin-left: 155px;
-}
-.quantity-input2{
-  width: 70px;
-  background-color: rgb(246, 244, 244);
-  border-style: none;
-  text-align: center;
-}
-.quantity-button2{
-  background-color: rgb(246, 244, 244);
-  border-style: none;
-  font-size: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
-  color: #55A8FC;
-}
-.delete-div2{
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
+
+.input-box input {
+  outline: none;
   border: none;
-  margin-top: 65px;
-  margin-left: 90px;
+  background-color: #ffc8fb;
+}
+delete-change-profile.delete button-my-account {
+  margin: auto 0;
+  padding: 12px 38px;
+  border: 2px solid #6E95B8;
+  color: #6E95B8;
+  border-radius: 50px;
+}
+.name-account{
+color: #6B6464;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.member{
+color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+opacity: 0.5;
+margin-top: 10px;
+}
+.u-name-data h5{
+
+color: #747474;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 24px;
+margin-bottom: 8px;
+}
+.buy-icon{
+display: flex;
+  align-items: center;
+margin-bottom: 16px;
+}
+.delete-change-profile.delete buton-my-account{
+margin: auto 0;
+  padding: 12px 38px;
+  border: 2px solid #6E95B8;
+  color: #6E95B8;
+  border-radius: 50px;
+}
+.delete-change-profile {
+margin-top: 32px;
+line-height: 24px;
+display: flex;
+justify-content: space-between;
+padding-left: 32px;
+padding-right: 32px;
+gap: 90px;
+}
+.radius-input{
+ 
+  padding: 12px 38px;
+  border: 2px solid #6E95B8;
+  color: #6E95B8;
+  border-radius: 50px;
+  border-radius: 50px;
+}
+.container{
+display: flex;
+justify-content: space-around;
+}
+.container-column {
+flex-direction: column !important;
+display: flex;
+align-items: center;
+}
+.help {
+display: flex;
+align-items: center; /* Căn dọc theo trục chính */
+}
+.help span {
+margin-left: 12px;
+}
+
+.my-account-icon{
+display: flex;
+  align-items: center;
+}
+.logout{
+display: flex;
+align-items: center;
+margin-top: 12px;
+
+}
+.logout svg,
+.logout span {
+  vertical-align: middle;
+}
+
+.delete-change-profile
+.delete:hover{
+transform: scale(1.025);
+transition: transform 0.3s ease; 
+background-color: #55a8fc;
+color: #fff;
+cursor: pointer;
+}
+.delete-change-profile
+.change-profie:hover{
+transform: scale(1.025); 
+transition: transform 0.3s ease; 
+background-color: #55a8fc;
+color: #fff;
+cursor: pointer;
+}
+.logo-myaccount
+.button-change-image:hover{
+transform: scale(1.025);
+transition: transform 0.3s ease; 
+background-color: #55a8fc;
+color: #fff;
+cursor: pointer;
+}
+/* #EAD8FC */
+
+.delete-change-profile
+.delete:active{
+transform: scale(0.9); 
+transition: transform 0.1s ease; 
+color: #fff;
+cursor: pointer;
+}
+.delete-change-profile
+.change-profie:active{
+transform: scale(0.9); 
+transition: transform 0.1s ease; 
+color: #fff;
+cursor: pointer;
+}
+.logo-myaccount
+.button-change-image:active{
+transform: scale(0.9); 
+transition: transform 0.1s ease; 
+color: #fff;
+cursor: pointer;
+}
+.buy-icon:hover{
+transform: scale(1.1);
+transition: transform 0.1s ease;
+}
+.help:hover{
+transform: scale(1.1); 
+transition: transform 0.1s ease; 
+}
+.logout:hover{
+transform: scale(1.1); 
+transition: transform 0.1s ease; 
+}
+.buy-icon:active{
+transform: scale(0.95);
+transition: transform 0.1s ease;
+}
+.help:active{
+transform: scale(0.95); 
+transition: transform 0.1s ease; 
+}
+.logout:active{
+transform: scale(0.95); 
+transition: transform 0.1s ease; 
 }
 /* end body */
 
@@ -177,6 +313,7 @@ header {
 .wrapper-footer{
   display: flex;
   height: 250px;
+  justify-content: space-around;
 }
 .block1{
   margin: 20px 0 0 120px;

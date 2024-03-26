@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="/folder_style/indexdemo.css" />
+    <!-- <link rel="stylesheet" href="/folder_js/index.js" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.1/esm/ionicons.min.js"
+      integrity="sha512-WsL2r6j6Im3HvCp3uuExL45LhU4qwsS4HgVHgti+k/9zXNQnLqiunaxwNxDl+NsLHryCUyGPBw2IV7mGe1Z7nQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      nav {
+        margin-top: 20px;
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50px;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 500px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <div>
+          <img
+            style="display: block"
+            width="100px"
+            src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <a
+        class="menu"
+        href="/folder_utils/index.html"
+        style="text-decoration: none"
+        >Trang chủ</a
+      >
+      <div class="menu-trangchu">
+        <a
+          href="/folder_pages/Nike.html"
+          style="text-decoration: none"
+          class="nameBanner"
+          >Nike AF1
+        </a>
+        <a
+          href="/folder_pages/jodan.html"
+          style="text-decoration: none"
+          class="nameBanner"
+        >
+          Nike Jodan
+        </a>
+        <a
+          href="/folder_pages/hangkhac.html"
+          style="text-decoration: none"
+          class="nameBanner"
+        >
+          AIR max
+        </a>
+      </div>
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada"></i>
+        <a href="/folder_pages/giohang.html">
+          <i class="fa-solid fa-cart-shopping" style="color: #eb7ada"></i
+        ></a>
+        <span id="icon-login">
+          <i class="fa-regular fa-user" style="color: #eb7ada"></i
+        ></span>
+      </div>
+    </header>
+    <!-- kết thúc header -->
+    <!-- main_nav -->
+    <br />
+    <hr />
+    <nav>
+      <br />
+      <h3>Top sản phẩm bán chạy</h3>
+      <br />
+      <div iv class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/folder_asset/af1/air-force-1-07-easyon.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/folder_asset/af1/air-force-1-07-essential.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/folder_asset//air max/air-max-1-shoes-KcSx0w.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="/folder_asset/jodan/Air Jordan 1 Low SE.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/folder_asset/jodan/air-jordan-1-elevate-low1.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </nav>
+    <!-- hết sản phẩm bán chạy -->
+    <!-- kết thúc main_nav -->
+    <!-- sản phẩm -->
+    <div class="main">
+      <section class="nike_category">
+        <div class="title" id="nike_category_title">
+          <h3>Nike AF1</h3>
+        </div>
+      </section>
+      <!-- hết giày nike -->
+
+      <section class="jodan_category">
+        <div class="tieude2" id="jodan_category_title">
+          <h3>Jodan</h3>
+        </div>
+        <div id="jodan-section"></div>
+      </section>
+
+      <!-- hết giày jd -->
+      <section class="hangkhac_category">
+        <div class="tieude2" id="hangkhac_category_title">
+          <h3>Hãng khác</h3>
+        </div>
+        <div id="hangkhac-section"></div>
+      </section>
+      <!-- hết hãng khác -->
+    </div>
+    <!-- kếta thúc sản phẩm  -->
+
+    <!-- af1 -->
+    <img src="/folder_asset/af1/air-force-1-07-easyon.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-07-essential.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-07-lv8.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-07-lx.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-07-next-nature.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-07-pro-tech.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-07.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-071-lv8.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-071.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-072.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-074.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-075.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-076.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-077.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-078.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-079.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-le-older.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-lv8-2-older.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-lv8-5-older.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-lv8-older.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-mid-07.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-mid-easyon-se-olde.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-mid-evo.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-older.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-pltaform.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-shadow.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-shadow1.png" alt="" />
+    <img src="/folder_asset/af1/air-force-1-wild.jpg" alt="" />
+    <img
+      src="/folder_asset/af1/force-1-low-lv8-easyon-younger-shoes.png"
+      alt=""
+    />
+    <img src="/folder_asset/af1/force-1-low-lv8-easyon-younger.png" alt="" />
+    <img src="/folder_asset/af1/force-1-lv8.png" alt="" />
+    <img src="/folder_asset/af1/lunar-force-1-duckboot.png" alt="" />
+
+    <!-- Jodan -->
+    <img src="/folder_asset/jodan/Air Jordan 1 Low SE.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-elevate-low.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-elevate-low1.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low-g-golf.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-elevate2.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low-se-1.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low-se-craft.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low-se.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low-se1.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low-se2.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low-se3.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low-se4.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low1.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low2.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low3.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low4.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-low5.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-mid-se-older.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-mid-se.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-mid-se1.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-mid-se2.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-mid-se3.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-mid.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-mid2.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-mid3.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-mid4.png" alt="" />
+    <img src="/folder_asset/jodan/air-jordan-1-mid5.png" alt="" />
+    <img src="/folder_asset/jodan/jordan-1-low-alt-younger.png" alt="" />
+    <img src="/folder_asset/jodan/jordan-1-low-alt-younger1.png" alt="" />
+    <img src="/folder_asset/jodan/jordan-1-mid-se-younger.png" alt="" />
+    <!-- max -->
+    <img src="/folder_asset/air max/air-max-1-shoes-KcSx0w.png" alt="">
+    <img src="/folder_asset/air max/air-max-270-shoes-2V5C4p.png" alt="">
+    <img src="/folder_asset/air max/air-max-270-shoes-vjpNZc.png" alt="">
+    <img src="/folder_asset/air max/air-max-90-lv8-shoes-5KhTdP.png" alt="">
+    <img src="/folder_asset/air max/air-max-90-shoes-K0mczj.png" alt="">
+    <img src="/folder_asset/air max/air-max-ap-shoes-3Rdq04.png" alt="">
+    <img src="/folder_asset/air max/air-max-dn-older-shoes-xkSP9x.png" alt="">
+    <img src="/folder_asset/air max/air-max-dn-shoes-drXjb8.png" alt="">
+    <img src="/folder_asset/air max/air-max-dn-shoes-FtLNfm.png" alt="">
+    <img src="/folder_asset/air max/air-max-excee-shoes-xBwQhG.png" alt="">
+    <img src="/folder_asset/air max/air-max-excee-shoes-Zvl8cs.png" alt="">
+    <img src="/folder_asset/air max/air-max-furyosa-nrg-shoes-jKWgZB.png" alt="">
+    <img src="/folder_asset/air max/air-max-plus-drift-shoes-FCM3Rg.png" alt="">
+    <img src="/folder_asset/air max/air-max-plus-shoes-B03LHK.png" alt="">
+    <img src="/folder_asset/air max/air-max-pulse-shoes-V9B1C5.png" alt="">
+    <img src="/folder_asset/air max/air-max-sc-shoes-FVn5sK.png" alt="">
+    <img src="/folder_asset/air max/air-max-solo-shoes-000Gh6.png" alt="">
+    <img src="/folder_asset/air max/air-max-solo-shoes-qVq5jJ.png" alt="">
+    <!-- foodter -->
+    <br />
+    <hr />
+    <footer class="footer">
+      <div class="wrapper-footer">
+        <div class="block1">
+          <div class="logo-footer">
+            <img
+              src="/folder_asset/423737895_1758954421253469_7838479141028168453_n.png"
+              style="height: 100px"
+              alt=""
+            />
+          </div>
+          <p>
+            Website chuyên cung cấp phẩm giá sỉ lẻ phân khối toàn cuốc ,<br />
+            khách hàng có nhu cầu vui lòng đặt hàng để chúng tôi kiểm kho và báo
+            lại sớm nhất <br />
+            . Ngoài ra chúng tôi còn cung cấp hàng sỉ lẻ khi đặt số lượng lớn
+            <br />
+          </p>
+        </div>
+
+        <div class="links-container">
+          <h4>YHL store</h4>
+
+          <ul>
+            <li>
+              <a href="/test.html">Trang chủ </a>
+            </li>
+            <li>
+              <a href="/folder_pages/Nike.html">Nike </a>
+            </li>
+            <li>
+              <a href="/folder_pages/jodan.html">Jodan</a>
+            </li>
+            <li>
+              <a href="/folder_pages/hangkhac.html"> Hàng khác </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="chinhsach">
+          <h4>Chính sách</h4>
+
+          <ul>
+            <li>
+              <a href="#">Chính sách bảo mật</a>
+            </li>
+            <li>
+              <a href="#"> Chính sách vận chuyển</a>
+            </li>
+            <li>
+              <a href="#"> Chính sách đổi trả</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lienhe">
+          <h4>Liên hệ với chúng tôi</h4>
+
+          <ul>
+            <li>
+              <p>Tạp hóa YHL Store</p>
+            </li>
+
+            <li>
+              <p>Người đại diện: Nguyễn Thành Nam</p>
+            </li>
+
+            <li>
+              <p>
+                Địa chỉ: Đường Thanh Bình , Mộ Lao , Hà Đông
+                <br />
+                và Trực Ninh , Nam Định
+              </p>
+            </li>
+
+            <li>
+              <p>Điện thoại: 02839369142</p>
+            </li>
+
+            <li>
+              <p>Email: namnguyen@gmail.com</p>
+            </li>
+
+            <li>
+              <p>MSDN: 0102289856 cấp ngày 23/05/2007 tại Hà Nội</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="follow-container">
+          <div class="follow">
+            <h4>Theo dõi chúng tôi tại:</h4>
+          </div>
+          <div class="icon">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- kết thúc foodter -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/folder_js/index.js"></script>
+  </body>
+</html>
