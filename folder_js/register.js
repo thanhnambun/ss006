@@ -28,6 +28,6 @@ formRegister.addEventListener("submit", function (e) {
     userLocal.push(obj);
     alert("Đăng kí thành công");
     localStorage.setItem("users", JSON.stringify(userLocal));
-    window.location.href = "/folder_pages/dangnhap.html";
+    window.location.href = "/folder_pages/login.html";
   }
 });

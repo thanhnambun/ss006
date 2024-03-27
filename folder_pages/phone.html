@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jodan</title>
-    <link rel="stylesheet" href="/folder_style/jodan.css" />
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="/folder_style/phone.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -16,12 +16,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.1/esm/ionicons.min.js"
-      integrity="sha512-WsL2r6j6Im3HvCp3uuExL45LhU4qwsS4HgVHgti+k/9zXNQnLqiunaxwNxDl+NsLHryCUyGPBw2IV7mGe1Z7nQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
   </head>
   <body>
     <header>
@@ -43,47 +37,142 @@
       >
       <div class="menu-trangchu">
         <a
-          href="/folder_pages/Nike.html"
+          href="/folder_pages/procduct.html"
           style="text-decoration: none"
           class="nameBanner"
-          >Nike AF1
+          >Sản phẩm
         </a>
         <a
-          href="/folder_pages/jodan.html"
+          href="/folder_pages/we.html"
           style="text-decoration: none"
           class="nameBanner"
         >
-          Jodan
+          Về chúng tôi
         </a>
         <a
-          href="/folder_pages/hangkhac.html"
+          href="/folder_pages/phone.html"
           style="text-decoration: none"
           class="nameBanner"
         >
-          Nike Max
+          liên hệ
         </a>
       </div>
       <div class="search">
-        <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada"></i>
-        <a href="/folder_pages/giohang.html">
+        <a href="/folder_pages/procduct.html">
+          <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada"></i>
+        </a>
+        <a href="/folder_pages/cart.html" id="iconGioHang">
           <i class="fa-solid fa-cart-shopping" style="color: #eb7ada"></i
         ></a>
-        <span id="icon-login">
+        <a id="icon-login">
           <i class="fa-regular fa-user" style="color: #eb7ada"></i>
-        </span>
+        </a>
       </div>
     </header>
-    <!-- end header -->
-    <section class="jodan_category">
-      <div class="tieude2" id="jodan_category_title">
-        <h3>Jodan</h3>
+
+    <section>
+      <div class="tong2">
+        <div class="left">
+          <h1>Liên hệ với chúng tôi</h1>
+          <p class="ngoai">Về mọi vấn đề khi mua hàng của bạn</p>
+          <div class="full1">
+            <div class="phantu">
+              <i class="fa-solid fa-phone"></i>
+              <p>02839369142</p>
+            </div>
+            <div class="phantu">
+              <i class="fa-solid fa-envelope"></i>
+              <p>namnguyen@gmail.com</p>
+            </div>
+            <div class="phantu">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>
+                Tầng 10, Tòa nhà Vincom, Số 45A <br />
+                Thanh Bình , Mộ Lao , Hà Đông <br>
+                và Trực Ninh , Nam Định 
+              </p>
+            </div>
+          </div>
+          <div class="theodoi">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="right">
+          <form class="thongtin">
+            <label for="name">Tên của bạn:</label><br />
+            <u>
+              <input type="text" id="name" name="ten" />
+            </u>
+            <div class="mailsdt">
+              <div class="div1">
+                <label for="mail">Email</label><br />
+                <u>
+                  <input type="email" id="mail" name="mail" />
+                </u>
+              </div>
+              <div class="div2">
+                <label for="sdt">Số điện thoại</label><br>
+                <u>
+                  <input type="number" id="sdt" name="sdt" />
+                </u>
+              </div>
+            </div>
+              <b><p>Vấn đề của bạn về:</p></b>
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="chon1"
+                  name="luachon"
+                  value="Chất lượng sản phẩm"
+                />
+                <label for="chon1">Chất lượng sản phẩm</label>
+                <input
+                  type="radio"
+                  id="chon2"
+                  name="luachon"
+                  value="Mua hàng"
+                />
+                <label for="chon2">Mua hàng</label>
+                <input
+                  type="radio"
+                  id="chon3"
+                  name="luachon"
+                  value="Thanh toán"
+                />
+                <label for="chon3">Thanh toán</label>
+                <input
+                  type="radio"
+                  id="chon4"
+                  name="luachon"
+                  value="Nhận hàng"
+                />
+                <label for="chon4">Nhận hàng</label>
+              </div>
+              <label for="khac">Khác:</label><br />
+              <input type="text" id="khac" name="khac" /><br />
+              <label for="feedback">Phản hồi của bạn:</label><br />
+              <input type="text" id="feedback" name="phanhoi" /><br />
+
+              <button id="gui">Gửi đi</button>
+              <!-- Thêm mã JavaScript -->
+              <script>
+                  // Lấy đối tượng button bằng ID
+                  var button = document.getElementById('gui');
+
+                  // Thêm sự kiện click vào button
+                  button.addEventListener('click', function() {
+                      // Hiển thị hộp thoại khi nhấn vào button
+                      alert('Đã gửi thành công. Hãy chờ phản hồi của chúng tôi từ 0-3h');
+                  });
+              </script> 
+            </div>
+          </form>
       </div>
-      <div id="jodan-section"></div>
     </section>
-    <div class="pagination"></div>
-    <br />
-    <!-- chuyen trang -->
-    <!-- Footer -->
+
     <footer class="footer">
       <div class="wrapper-footer">
         <div class="block1">
@@ -113,21 +202,20 @@
               </a>
             </li>
             <li>
-              <a href="/folder_pages/Nike.html" style="text-decoration: none"
-                >Nike
+              <a
+                href="/folder_pages/procduct.html"
+                style="text-decoration: none"
+                >sản phẩm
               </a>
             </li>
             <li>
-              <a href="/folder_pages/jodan.html" style="text-decoration: none"
-                >Jodan</a
+              <a href="/folder_pages/we.html" style="text-decoration: none"
+                >về chúng tôi</a
               >
             </li>
             <li>
-              <a
-                href="/folder_pages/hangkhac.html"
-                style="text-decoration: none"
-              >
-                AIR Max
+              <a href="/folder_pages/phone.html" style="text-decoration: none">
+                liên hệ
               </a>
             </li>
           </ul>
@@ -205,25 +293,5 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="/folder_js/jodan.js"></script>
   </body>
 </html>

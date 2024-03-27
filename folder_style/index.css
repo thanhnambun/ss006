@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* bắt dầu header */
 header {
     display: flex;
@@ -139,16 +143,6 @@ header {
     margin-bottom: 20px;
 }
 
-.chuyentrang {
-    color: #f26b6b;
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #f48587;
-    border-radius: 50%;
-    line-height: 40px;
-    text-align: center;
-}
 
 .chuyensangtrang {
     height: 40px;
@@ -157,9 +151,18 @@ header {
     border: 2px solid #f48587;
     margin: 10px;
     border-radius: 20px;
-    justify-self: center;
+    justify-content: center;
+    align-items: center;
     margin-left: 670px;
     margin-top: 70PX;
+    display: flex;
+}
+
+#search {
+    color: #eb7ada;
+    border: 2px solid #eb7ada;
+    border-radius: 5px;
+    margin-right: 5px;
 }
 
 /* kết thúc main */
@@ -168,6 +171,7 @@ header {
     display: flex;
     justify-content: space-around;
     height: 250px;
+    background-color: white;
 }
 
 .block1 {

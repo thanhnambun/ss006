@@ -1,11 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 /* start header */
 header {
   display: flex;
@@ -14,6 +16,7 @@ header {
   width: 100%;
   align-items: center;
 }
+
 .logo {
   padding: 0px 120px;
   margin-right: 120px;
@@ -21,30 +24,34 @@ header {
   justify-content: center;
   align-items: center;
 }
-.menu{
+
+.menu {
   color: #eb7ada;
   padding: 30px;
   font-size: 20px;
   font-family: Inter, Helvetica, sans-serif;
 }
+
 .menu-trangchu {
   display: flex;
   gap: 40px;
 }
-.nameBanner{
+
+.nameBanner {
   color: #eb7ada;
   padding: 30px;
   font-size: 20px;
   font-family: Inter, Helvetica, sans-serif;
 }
-.search{
+
+.search {
   display: flex;
   margin-left: 100px;
   gap: 50px;
 }
 
 /* end header */
-  
+
 /* start body */
 .single-page {
   width: 100%;
@@ -84,16 +91,19 @@ header {
   align-items: center;
   gap: 32px;
 }
-.chuaicon{
+
+.chuaicon {
   background-color: #c6bebe;
   width: 100px;
   height: 100px;
   border-radius: 100%;
 }
-.chuaicon i{
+
+.chuaicon i {
   padding-top: 43px;
   padding-left: 43px;
 }
+
 .logo-myaccount .button-change-image {
   /* can giua theo chieu doc */
   margin: auto 0;
@@ -110,16 +120,18 @@ header {
   padding-right: 32px;
   gap: 90px;
 }
-.font-myaccount{
+
+.font-myaccount {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   margin-bottom: 56px;
 }
 
-.form-name-email{
+.form-name-email {
   width: 50%;
 }
+
 .input-box {
   display: flex;
   justify-content: space-between;
@@ -128,9 +140,10 @@ header {
   border: 2px solid #ffc8fb;
   background-color: #ffc8fb;
 }
+
 .input-box input[type="text"] {
-  font-size: 16px; 
-  
+  font-size: 16px;
+
 }
 
 .input-box input {
@@ -138,6 +151,7 @@ header {
   border: none;
   background-color: #ffc8fb;
 }
+
 delete-change-profile.delete button-my-account {
   margin: auto 0;
   padding: 12px 38px;
@@ -145,180 +159,201 @@ delete-change-profile.delete button-my-account {
   color: #6E95B8;
   border-radius: 50px;
 }
-.name-account{
-color: #6B6464;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-.member{
-color: #000;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-opacity: 0.5;
-margin-top: 10px;
-}
-.u-name-data h5{
 
-color: #747474;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-top: 24px;
-margin-bottom: 8px;
+.name-account {
+  color: #6B6464;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
-.buy-icon{
-display: flex;
+
+.member {
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+.u-name-data h5 {
+
+  color: #747474;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.buy-icon {
+  display: flex;
   align-items: center;
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
-.delete-change-profile.delete buton-my-account{
-margin: auto 0;
+
+.delete-change-profile.delete buton-my-account {
+  margin: auto 0;
   padding: 12px 38px;
   border: 2px solid #6E95B8;
   color: #6E95B8;
   border-radius: 50px;
 }
+
 .delete-change-profile {
-margin-top: 32px;
-line-height: 24px;
-display: flex;
-justify-content: space-between;
-padding-left: 32px;
-padding-right: 32px;
-gap: 90px;
+  margin-top: 32px;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  gap: 90px;
 }
-.radius-input{
- 
+
+.radius-input {
+
   padding: 12px 38px;
   border: 2px solid #6E95B8;
   color: #6E95B8;
   border-radius: 50px;
   border-radius: 50px;
 }
-.container{
-display: flex;
-justify-content: space-around;
-}
-.container-column {
-flex-direction: column !important;
-display: flex;
-align-items: center;
-}
-.help {
-display: flex;
-align-items: center; /* Căn dọc theo trục chính */
-}
-.help span {
-margin-left: 12px;
+
+.container {
+  display: flex;
+  justify-content: space-around;
 }
 
-.my-account-icon{
-display: flex;
+.container-column {
+  flex-direction: column !important;
+  display: flex;
   align-items: center;
 }
-.logout{
-display: flex;
-align-items: center;
-margin-top: 12px;
+
+.help {
+  display: flex;
+  align-items: center;
+  /* Căn dọc theo trục chính */
+}
+
+.help span {
+  margin-left: 12px;
+}
+
+.my-account-icon {
+  display: flex;
+  align-items: center;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
 
 }
-.logout svg,
+
 .logout span {
   vertical-align: middle;
 }
 
-.delete-change-profile
-.delete:hover{
-transform: scale(1.025);
-transition: transform 0.3s ease; 
-background-color: #55a8fc;
-color: #fff;
-cursor: pointer;
+.delete-change-profile .delete:hover {
+  transform: scale(1.025);
+  transition: transform 0.3s ease;
+  background-color: #55a8fc;
+  color: #fff;
+  cursor: pointer;
 }
-.delete-change-profile
-.change-profie:hover{
-transform: scale(1.025); 
-transition: transform 0.3s ease; 
-background-color: #55a8fc;
-color: #fff;
-cursor: pointer;
+
+.change-profie:hover {
+  transform: scale(1.025);
+  transition: transform 0.3s ease;
+  background-color: #55a8fc;
+  color: #fff;
+  cursor: pointer;
 }
-.logo-myaccount
-.button-change-image:hover{
-transform: scale(1.025);
-transition: transform 0.3s ease; 
-background-color: #55a8fc;
-color: #fff;
-cursor: pointer;
+
+.logo-myaccount .button-change-image:hover {
+  transform: scale(1.025);
+  transition: transform 0.3s ease;
+  background-color: #55a8fc;
+  color: #fff;
+  cursor: pointer;
 }
+
 /* #EAD8FC */
 
-.delete-change-profile
-.delete:active{
-transform: scale(0.9); 
-transition: transform 0.1s ease; 
-color: #fff;
-cursor: pointer;
+.delete-change-profile .delete:active {
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
+  color: #fff;
+  cursor: pointer;
 }
-.delete-change-profile
-.change-profie:active{
-transform: scale(0.9); 
-transition: transform 0.1s ease; 
-color: #fff;
-cursor: pointer;
+
+.delete-change-profile .change-profie:active {
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
+  color: #fff;
+  cursor: pointer;
 }
-.logo-myaccount
-.button-change-image:active{
-transform: scale(0.9); 
-transition: transform 0.1s ease; 
-color: #fff;
-cursor: pointer;
+
+.logo-myaccount .button-change-image:active {
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
+  color: #fff;
+  cursor: pointer;
 }
-.buy-icon:hover{
-transform: scale(1.1);
-transition: transform 0.1s ease;
+
+.buy-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s ease;
 }
-.help:hover{
-transform: scale(1.1); 
-transition: transform 0.1s ease; 
+
+.help:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s ease;
 }
-.logout:hover{
-transform: scale(1.1); 
-transition: transform 0.1s ease; 
+
+.logout:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s ease;
 }
-.buy-icon:active{
-transform: scale(0.95);
-transition: transform 0.1s ease;
+
+.buy-icon:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
 }
-.help:active{
-transform: scale(0.95); 
-transition: transform 0.1s ease; 
+
+.help:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
 }
-.logout:active{
-transform: scale(0.95); 
-transition: transform 0.1s ease; 
+
+.logout:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
 }
+
 /* end body */
 
 /* start fooder*/
 
-.wrapper-footer{
+.wrapper-footer {
   display: flex;
   height: 250px;
   justify-content: space-around;
 }
-.block1{
+
+.block1 {
   margin: 20px 0 0 120px;
 }
-.block1 p{
+
+.block1 p {
   font-family: Inter, Helvetica, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -326,87 +361,108 @@ transition: transform 0.1s ease;
   line-height: normal;
   padding-top: 5px;
 }
-.block1 .icon-footer{
+
+.block1 .icon-footer {
   margin: 10px 0 0 0;
 }
-.links-container{
+
+.links-container {
   margin: 30px;
   font-size: 13px;
   font-family: Inter, Helvetica, sans-serif;
 }
-.links-container li{
+
+.links-container li {
   padding-top: 5px;
 }
-.links-container a{
+
+.links-container a {
   color: black;
 }
-.links-container h4{
+
+.links-container h4 {
   padding-bottom: 10px;
 }
-.links-container a:hover{
+
+.links-container a:hover {
   color: #ef7199;
 }
-.chinhsach a:hover{
-  color:#ef7199;
+
+.chinhsach a:hover {
+  color: #ef7199;
 }
-.chinhsach a{
+
+.chinhsach a {
   color: black;
 }
-.chinhsach{
+
+.chinhsach {
   margin: 30px;
   font-size: 13px;
   font-family: Inter, Helvetica, sans-serif;
 }
-.chinhsach li{
+
+.chinhsach li {
   padding-top: 5px;
 }
-.chinhsach h4{
+
+.chinhsach h4 {
   padding-bottom: 10px;
 }
-.lienhe{
+
+.lienhe {
   margin: 30px;
   font-size: 13px;
   font-family: Inter, Helvetica, sans-serif;
 }
-.lienhe li{
+
+.lienhe li {
   padding-top: 5px;
 }
-.lienhe h4{
+
+.lienhe h4 {
   padding-bottom: 10px;
 }
-.follow-container{
+
+.follow-container {
   margin: 30px;
   font-size: 13px;
   font-family: Inter, Helvetica, sans-serif;
 }
-.follow-container h4{
+
+.follow-container h4 {
   padding-bottom: 10px;
 }
-.follow-container .icon ul{
+
+.follow-container .icon ul {
   padding-bottom: 10px;
   display: flex;
   justify-content: space-around;
 }
-.text.links-container{
+
+.text.links-container {
   color: black;
 }
-.icon a{
+
+.icon a {
   font-size: 20px;
   color: black;
 }
-.icon a:hover{
+
+.icon a:hover {
   color: red;
 }
-.wrapper-footer p{
+
+.wrapper-footer p {
   color: black;
 }
-.wrapper-footer h4{
+
+.wrapper-footer h4 {
   color: black;
 }
-footer ul{
+
+footer ul {
   list-style: none;
 }
 
 /* End of Css Footer */
-
-

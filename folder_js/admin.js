@@ -26,17 +26,6 @@ function displayProjects() {
     deleteButton.innerText = "Delete";
     deleteButton.addEventListener("click", function () {
       deleteProject(product.id);
-      //   //tim ra vi tri thang co product.id
-      //   let location = productList.findIndex(
-      //     (element) => element.id == product.id
-      //   );
-      //   console.log(location);
-      //   //tim ra roi thi xoa
-      //   //   deleteProject(productList.id);
-      //   // filter để bỏ cái product có id đó đi, ~ giữ những thằng còn lại
-      //   // cập nhật local bằng những thằng còn lại đấy:
-      //   //   console.log(productList);
-      //   productList.splice(location, 1);
     });
     let updateButton = document.createElement("button");
     updateButton.innerText = "Update";

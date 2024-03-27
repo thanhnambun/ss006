@@ -1,71 +1,71 @@
-// let productList = [
-//   {
-//     id: 1,
-//     category: 3,
-//     img: "/folder_asset/af1/air-force-1-07-easyon.png",
-//     name: "air-force-1-07",
-//     price: 340000,
-//   },
-//   {
-//     id: 2,
-//     category: 3,
-//     img: "/folder_asset/af1/air-force-1-07-essential.png",
-//     name: "air-force-1-07-essential",
-//     price: 540000,
-//   },
-//   {
-//     id: 3,
-//     category: 3,
-//     img: "/folder_asset/af1/air-force-1-07-lv8.png",
-//     name: "air-force-1-07-lv8",
-//     price: 315000,
-//   },
-//   {
-//     id: 4,
-//     category: 2,
-//     img: "/folder_asset/jodan/Air Jordan 1 Low SE.png",
-//     name: "Air Jordan 1 Low SE",
-//     price: 815000,
-//   },
-//   {
-//     id: 5,
-//     category: 2,
-//     img: "/folder_asset/jodan/air-jordan-1-elevate-low.png",
-//     name: "air-jordan-1-elevate-low",
-//     price: 315000,
-//   },
-//   {
-//     id: 6,
-//     category: 2,
-//     img: "/folder_asset/jodan/air-jordan-1-low-g-golf.png",
-//     name: "air-jordan-1-low-g-golf",
-//     price: 310000,
-//   },
-//   {
-//     id: 7,
-//     category: 1,
-//     img: "/folder_asset/air max/air-max-1-shoes-KcSx0w.png",
-//     name: "air-max-1-shoes-KcSx0w",
-//     price: 315000,
-//   },
-//   {
-//     id: 8,
-//     category: 1,
-//     img: "/folder_asset/air max/air-max-270-shoes-2V5C4p.png",
-//     name: "air-max-270-shoes-2V5C4p",
-//     price: 785000,
-//   },
-//   {
-//     id: 9,
-//     category: 1,
-//     img: "/folder_asset/air max/air-max-270-shoes-vjpNZc.png",
-//     name: "air-max-270-shoes-vjpNZc",
-//     price: 958000,
-//   },
-// ];
+let productList = [
+  {
+    id: 1,
+    category: 3,
+    img: "/folder_asset/af1/air-force-1-07-easyon.png",
+    name: "air-force-1-07",
+    price: 340000,
+  },
+  {
+    id: 2,
+    category: 3,
+    img: "/folder_asset/af1/air-force-1-07-essential.png",
+    name: "air-force-1-07-essential",
+    price: 540000,
+  },
+  {
+    id: 3,
+    category: 3,
+    img: "/folder_asset/af1/air-force-1-07-lv8.png",
+    name: "air-force-1-07-lv8",
+    price: 315000,
+  },
+  {
+    id: 4,
+    category: 2,
+    img: "/folder_asset/jodan/Air Jordan 1 Low SE.png",
+    name: "Air Jordan 1 Low SE",
+    price: 815000,
+  },
+  {
+    id: 5,
+    category: 2,
+    img: "/folder_asset/jodan/air-jordan-1-elevate-low.png",
+    name: "air-jordan-1-elevate-low",
+    price: 315000,
+  },
+  {
+    id: 6,
+    category: 2,
+    img: "/folder_asset/jodan/air-jordan-1-low-g-golf.png",
+    name: "air-jordan-1-low-g-golf",
+    price: 310000,
+  },
+  {
+    id: 7,
+    category: 1,
+    img: "/folder_asset/air max/air-max-1-shoes-KcSx0w.png",
+    name: "air-max-1-shoes-KcSx0w",
+    price: 315000,
+  },
+  {
+    id: 8,
+    category: 1,
+    img: "/folder_asset/air max/air-max-270-shoes-2V5C4p.png",
+    name: "air-max-270-shoes-2V5C4p",
+    price: 785000,
+  },
+  {
+    id: 9,
+    category: 1,
+    img: "/folder_asset/air max/air-max-270-shoes-vjpNZc.png",
+    name: "air-max-270-shoes-vjpNZc",
+    price: 958000,
+  },
+];
 
-// localStorage.setItem("productList", JSON.stringify(productList));
-let productList = JSON.parse(localStorage.getItem("productList"));
+localStorage.setItem("productList", JSON.stringify(productList));
+// let productList = JSON.parse(localStorage.getItem("productList"));
 
 // let nike_category_title = document.getElementById("nike_category_title");
 // let jodan_category_title = document.getElementById("jodan_category_title");
@@ -163,44 +163,23 @@ iconLogin.addEventListener("click", function () {
   if (checkIconLogin) {
     window.location.href = "/folder_pages/myaccount.html";
   } else {
-    window.location.href = "/folder_pages/dangnhap.html";
+    window.location.href = "/folder_pages/login.html";
   }
 });
 // thêm vô giỏ hàng
 
 function addToCart(productId) {
-  /* 
-      khi nào cho user đi mua hàng
-      khi đăng nhập thì mới cho mua
-   */
-  console.log(productId);
   let checkLogin = JSON.parse(localStorage.getItem("checkLogin"));
   if (checkLogin == null) {
     return; // gặp return dừng chương trình luôn
   }
-  /* 
-      lấy giỏ hàng của user để đi mua hàng
-      và lấy giỏ hàng user dựa vào id của user
-   */
   let users = JSON.parse(localStorage.getItem("users"));
   for (let i = 0; i < users.length; i++) {
     if (users[i].id == checkLogin) {
-      //lấy thông tin sản phẩm để đưa vào giỏ hàng
-      // làm sao để lấy thông tin sản phẩm
-
-      // có id sản phẩm rồi làm sao lấy thông tin sản phẩm
+      alert("mua hàng thành công ");
       for (let j = 0; j < productList.length; j++) {
         if (productId == productList[j].id) {
-          users[i];
-          console.log("1111", productList[j]);
           console.log("giỏ hàng của user sẽ là ", users[i].cart);
-          // let a={...product[j],quantity:1}
-          /* 
-            trước khi thêm vào phải xem trong giỏ hàng có sản phẩm đó chưa
-            có rồi thì tăng số lượng còn chưa có thì thêm vào bt
-          */
-          // kiểm tra xem trong giỏ hàng có tồn tại sản phẩm đó chưa
-          // duyệt giỏ hàng
           let index = users[i].cart.findIndex((item, index) => {
             return item.id == productId;
           });

@@ -1,0 +1,198 @@
+#menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#admin {
+    font-size: 33px;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.listMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home-my-account .font-myaccount {
+    color: #55a8fc;
+}
+
+.home-my-account .logo-myaccount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-myaccount .logo-myaccount-left {
+    display: flex;
+    /* can giua theo chieu doc */
+    align-items: center;
+    gap: 32px;
+}
+
+.chuaicon {
+    background-color: #c6bebe;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.chuaicon i {
+    padding-top: 43px;
+    padding-left: 43px;
+}
+
+.logo-myaccount .button-change-image {
+    /* can giua theo chieu doc */
+    margin: auto 0;
+    padding: 12px 38px;
+    border: 2px solid #6E95B8;
+    color: #6E95B8;
+    border-radius: 50px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 90px;
+}
+
+.font-myaccount {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 56px;
+}
+
+.form-name-email {
+    width: 50%;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 9px;
+    border: 2px solid #ffc8fb;
+    background-color: #ffc8fb;
+}
+
+.input-box input[type="text"] {
+    font-size: 16px;
+
+}
+
+.input-box input {
+    outline: none;
+    border: none;
+    background-color: #ffc8fb;
+}
+
+delete-change-profile.delete button-my-account {
+    margin: auto 0;
+    padding: 12px 38px;
+    border: 2px solid #6E95B8;
+    color: #6E95B8;
+    border-radius: 50px;
+}
+
+.name-account {
+    color: #6B6464;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.member {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    opacity: 0.5;
+    margin-top: 10px;
+}
+
+.u-name-data h5 {
+
+    color: #747474;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.buy-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.delete-change-profile.delete buton-my-account {
+    margin: auto 0;
+    padding: 12px 38px;
+    border: 2px solid #6E95B8;
+    color: #6E95B8;
+    border-radius: 50px;
+}
+
+.delete-change-profile {
+    margin-top: 32px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 90px;
+}
+
+.radius-input {
+
+    padding: 12px 38px;
+    border: 2px solid #6E95B8;
+    color: #6E95B8;
+    border-radius: 50px;
+    border-radius: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-column {
+    flex-direction: column !important;
+    display: flex;
+    align-items: center;
+}
+
+.help {
+    display: flex;
+    align-items: center;
+    /* Căn dọc theo trục chính */
+}
+
+.help span {
+    margin-left: 12px;
+}
+
+.my-account-icon {
+    display: flex;
+    align-items: center;
+}

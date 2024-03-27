@@ -2,9 +2,9 @@ let iconGioHang = document.getElementById("iconGioHang");
 iconGioHang.addEventListener("click", function () {
   let checkIcoGioHang = JSON.parse(localStorage.getItem("checkLogin"));
   if (checkIcoGioHang) {
-    window.location.href = "/folder_pages/giohang.html";
+    window.location.href = "/folder_pages/cart.html";
   } else {
-    window.location.href = "/folder_pages/dangnhap.html";
+    window.location.href = "/folder_pages/login.html";
   }
 });
 
@@ -14,10 +14,10 @@ let account = {};
 
 //tim thang dang dang nhap
 for (let i = 0; i < users.length; i++) {
+  console.log(users[i].id, checkLogin);
   if (users[i].id == checkLogin) {
     account = users[i];
-  } else {
-    console.log("sai");
+    break;
   }
 }
 
@@ -82,21 +82,30 @@ function increaseQuantity(id) {
 }
 function decreaseQuantity(id) {
   for (let i = 0; i < cart.length; i++) {
-    if (cart[i].quantity > 1) {
-      for (let i = 0; i < cart.length; i++) {
-        if (cart[i].id == id) {
-          cart[i].quantity -= 1;
+    if (cart[i].id == id) {
+      if (cart[i].quantity > 1) {
+        cart[i].quantity -= 1;
+      } else {
+        const result = confirm("bạn có chắc muốn xóa sản phẩm này không");
+        if (result) {
+          cart.splice(i, 1);
+          for (let i = 0; i < users.length; i++) {
+            if (users[i].cart == cart) {
+              cart = users[i].cart;
+              localStorage.setItem("users", JSON.stringify(users));
+            }
+          }
+        } else {
+          break;
         }
       }
-      render();
     }
   }
-  for (let i = 0; i < users.length; i++) {
-    if (account.id == users[i].id) {
-      users[i].cart = cart;
-      localStorage.setItem("users", JSON.stringify(users));
-    }
-  }
+  // kiem tra sl cua sp: > 2 thi -    < 2 thi xoa
+  // - thi cu cham .quaantity -= 1
+  // xoa thif cart.splice(index, 1)
+
+  //
 }
 function giaOutput(amount) {
   return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); // hien thi format tien VN
@@ -141,20 +150,22 @@ function tongthanhtoan() {
   <h3>Tổng đ${sum + 30000}</h3>
 `;
 }
-let thanhtoanthoi = document.getElementById("thanhtoanthoi");
+var button = document.getElementById("thanhtoanthoi");
+// let thanhtoanthoi = document.getElementById("thanhtoanthoi");
 function phaithanhtoan() {
   let sum = 0;
-  thanhtoanthoi.innerHTML = ``;
+  button.innerHTML = ``;
   for (let i in cart) {
     sum += cart[i].price * cart[i].quantity;
   }
-  thanhtoan.innerHTML += `
-  <h3>Tổng đ${sum + 30000}</h3>
+  button.innerHTML += `
+  <b>Tổng đ${sum + 30000}</b>
 `;
 }
 tongthanhtoan();
+phaithanhtoan();
 // Lấy đối tượng button bằng ID
-var button = document.getElementById("thanhtoanthoi");
+// var button = document.getElementById("thanhtoanthoi");
 
 // Thêm sự kiện click vào button
 button.addEventListener("click", function () {

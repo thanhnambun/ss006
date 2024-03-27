@@ -58,7 +58,7 @@ header {
     font-size: 30px;
 }
 
-#nike-section {
+#allProduct-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -149,12 +149,20 @@ header {
     margin-left: 10px;
 }
 
+#search {
+    color: #eb7ada;
+    border: 2px solid #eb7ada;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
 /* kt main */
 /* footer */
 .wrapper-footer {
     display: flex;
     height: 250px;
     justify-content: space-around;
+
 }
 
 .block1 {

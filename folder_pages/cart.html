@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giỏ hàng</title>
     <link rel="stylesheet" href="/folder_style/myaccount.css" />
-    <link rel="stylesheet" href="/folder_style/giohang.css" />
+    <link rel="stylesheet" href="/folder_style/cart.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -51,32 +51,34 @@
       >
       <div class="menu-trangchu">
         <a
-          href="/folder_pages/Nike.html"
+          href="/folder_pages/procduct.html"
           style="text-decoration: none"
           class="nameBanner"
-          >Nike AF1
+          >Sản phẩm
         </a>
         <a
-          href="/folder_pages/jodan.html"
+          href="/folder_pages/we.html"
           style="text-decoration: none"
           class="nameBanner"
         >
-          Jodan
+          về chúng tôi
         </a>
         <a
-          href="/folder_pages/hangkhac.html"
+          href="/folder_pages/phone.html"
           style="text-decoration: none"
           class="nameBanner"
         >
-          Nike Max
+          Liên hệ
         </a>
       </div>
       <div class="search">
-        <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada"></i>
-        <a href="/folder_pages/giohang.html" id="iconGioHang">
+        <a href="/folder_pages/procduct.html">
+          <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada"></i>
+        </a>
+        <a href="/folder_pages/cart.html" id="iconGioHang">
           <i class="fa-solid fa-cart-shopping" style="color: #eb7ada"></i
         ></a>
-        <a href="/folder_pages/myaccount.html">
+        <a id="icon-login" href="/folder_pages/myaccount.html">
           <i class="fa-regular fa-user" style="color: #eb7ada"></i>
         </a>
       </div>
@@ -183,9 +185,7 @@
                   <input type="text" for="cvv" id="cvv" />
                 </div>
               </div>
-              <button id="thanhtoanthoi">
-                <b>Thanh toán: ₫ 1,318,000</b>
-              </button>
+              <button id="thanhtoanthoi"></button>
               <div class="khoathongtin">
                 <i class="fa-solid fa-lock"></i>
                 <p>Chúng tôi cam kết bảo mật thông tin tài khoản của bạn.</p>
@@ -221,16 +221,16 @@
 
           <ul>
             <li>
-              <a href="/test.html">Trang chủ </a>
+              <a href="/folder_utils/index.html">Trang chủ </a>
             </li>
             <li>
-              <a href="/folder_pages/Nike.html">Nike </a>
+              <a href="/folder_pages/procduct.html">sản phẩm </a>
             </li>
             <li>
-              <a href="/folder_pages/jodan.html">Jodan</a>
+              <a href="/folder_pages/we.html">về chúng tôi </a>
             </li>
             <li>
-              <a href="/folder_pages/hangkhac.html"> Hàng khác </a>
+              <a href="/folder_pages/phone.html"> liên hệ </a>
             </li>
           </ul>
         </div>
@@ -324,6 +324,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="../folder_js/giohang.js"></script>
+    <script src="../folder_js/cart.js"></script>
   </body>
 </html>

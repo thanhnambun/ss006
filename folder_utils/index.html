@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nike</title>
-    <link rel="stylesheet" href="/folder_style/nike.css" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="/folder_style/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -16,12 +16,43 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.1/esm/ionicons.min.js"
-      integrity="sha512-WsL2r6j6Im3HvCp3uuExL45LhU4qwsS4HgVHgti+k/9zXNQnLqiunaxwNxDl+NsLHryCUyGPBw2IV7mGe1Z7nQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -43,47 +74,107 @@
       >
       <div class="menu-trangchu">
         <a
-          href="/folder_pages/Nike.html"
+          href="/folder_pages/procduct.html"
           style="text-decoration: none"
           class="nameBanner"
-          >Nike AF1
+          >sản phẩm 
         </a>
         <a
-          href="/folder_pages/jodan.html"
+          href="/folder_pages/we.html"
           style="text-decoration: none"
           class="nameBanner"
         >
-          Jodan
+          Về chúng tôi 
         </a>
         <a
-          href="/folder_pages/hangkhac.html"
+          href="/folder_pages/phone.html"
           style="text-decoration: none"
           class="nameBanner"
         >
-          Nike Max
+          liên hệ
         </a>
       </div>
       <div class="search">
-        <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada"></i>
-        <a href="/folder_pages/giohang.html">
+        <a href="/folder_pages/procduct.html">
+          <i class="fa-solid fa-magnifying-glass" style="color: #eb7ada"></i>
+        </a>
+        <a href="/folder_pages/cart.html" id="iconGioHang">
           <i class="fa-solid fa-cart-shopping" style="color: #eb7ada"></i
         ></a>
-        <span id="icon-login">
+        <a id="icon-login">
           <i class="fa-regular fa-user" style="color: #eb7ada"></i>
-        </span>
+        </a>
       </div>
     </header>
     <!-- end header -->
     <!-- main -->
+
+    <div class="swiper mySwiper">
+      <h3>Top sản phẩm bán chạy</h3>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/folder_asset/air max/air-max-1-shoes-KcSx0w.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/folder_asset/af1/air-force-1-07-easyon.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/folder_asset/af1/air-force-1-07-lv8.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/folder_asset/air max/air-max-270-shoes-2V5C4p.png"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img src="/folder_asset/jodan/Air Jordan 1 Low SE.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/folder_asset/jodan/air-jordan-1-low-se.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/folder_asset/jodan/jordan-1-mid-se-younger.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/folder_asset/af1/lunar-force-1-duckboot.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/folder_asset/air max/air-max-solo-shoes-qVq5jJ.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
     <section class="nike_category">
       <div class="tieude2" id="nike_category_title">
         <h3>Nike</h3>
       </div>
       <div id="nike-section"></div>
     </section>
-    <br />
-    <!-- chuyen trang -->
-    <div class="pagination"></div>
+
+    <section class="jodan_category">
+      <div class="tieude2" id="jodan_category_title">
+        <h3>jodan</h3>
+      </div>
+      <div id="jodan-section"></div>
+    </section>
+
+    <section class="hangkhac_category">
+      <div class="tieude2" id="hangkhac_category_title">
+        <h3>AIR Max</h3>
+      </div>
+      <div id="hangkhac-section"></div>
+    </section>
+
+    <a class="chuyensangtrang" href="/folder_pages/procduct.html"
+      >xem thêm sản phẩm</a
+    >
+
     <!-- kt main -->
     <br />
     <hr />
@@ -117,21 +208,21 @@
               </a>
             </li>
             <li>
-              <a href="/folder_pages/Nike.html" style="text-decoration: none"
-                >Nike
+              <a href="/folder_pages/procduct.html" style="text-decoration: none"
+                >sản phẩm
               </a>
             </li>
             <li>
-              <a href="/folder_pages/jodan.html" style="text-decoration: none"
-                >Jodan</a
+              <a href="/folder_pages/we.html" style="text-decoration: none"
+                >về chúng tôi</a
               >
             </li>
             <li>
               <a
-                href="/folder_pages/hangkhac.html"
+                href="/folder_pages/phone.html"
                 style="text-decoration: none"
               >
-                AIR Max
+                liên hệ
               </a>
             </li>
           </ul>
@@ -212,11 +303,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
@@ -238,6 +327,6 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
-    <script src="/folder_js/nike.js"></script>
+    <script src="/folder_js/index.js"></script>
   </body>
 </html>
