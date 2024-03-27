@@ -149,7 +149,7 @@ for (let index in jodanProduct) {
               <div class="icons icon-heart">
               <i class="fa-regular fa-heart"></i>
               </div>
-              <button class="timhieuthem"><a href="#" style="text-decoration: none">Tìm hiểu thêm</a></button>
+              <button class="timhieuthem"><a href="#" style="text-decoration: none" onclick ="(${jodanProduct[index].id})">Tìm hiểu thêm</a></button>
               <div class="icons icon-heart" id="${jodanProduct[index].id}" onclick ="addToCart(${jodanProduct[index].id})">
                 <ion-icon name="cart-outline"></ion-icon>
               </div>

@@ -626,7 +626,7 @@ function render() {
                 <div class="icons icon-heart">
                 <i class="fa-regular fa-heart"></i>
                 </div>
-                <button class="timhieuthem"><a href="#" style="text-decoration: none">Tìm hiểu thêm</a></button>
+                <button class="timhieuthem"><a href="#" style="text-decoration: none" onclick ="addProduct(${allProduct[i].id})">Tìm hiểu thêm</a></button>
                 <div class="icons icon-heart" id="${allProduct[i].id}" onclick ="addToCart(${allProduct[i].id})">
                   <ion-icon name="cart-outline"></ion-icon>
                 </div>
